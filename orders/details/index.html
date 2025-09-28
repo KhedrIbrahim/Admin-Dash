@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/style.css" />
+    <link rel="stylesheet" href="../../css/normalize.css" />
+    <link rel="icon" href="../../img/favicon.ico" type="image/x-icon">
+    <title>Orders Details</title>
+</head>
+<body>
+    <!-- Shadow -->
+    <div class="bx-shadow"></div>
+    <section class="all">
+        <nav class="navbar" id="navBox">
+            <div class="cont">
+                <div class="logo">
+                    <div class="img"><img src="../../img/logo-white-full.png" alt="Watt Mobilities"></div>
+                    <div class="close-btn"><button class="btn" id="btnCloseNav"><img src="../../img/icon/close.png" alt="Close"></button></div>
+                </div>
+                <div class="links">
+                    <div class="link">
+                        <!-- (act) class for Active Btn -->
+                        <div class="main-link"><a href="../../dashboard/" class="link-el dashboard"><div class="icon"></div><div class="txt">Dashboard</div></a></div>
+                    </div>
+                    <div class="link">
+                        <div class="main-link"><a href="#" class="link-el act orders"><div class="icon"></div><div class="txt">Orders</div></a></div>
+                    </div>
+                    <div class="link">
+                        <div class="main-link link-el customers"><div class="icon"></div> <div class="txt">Customers</div> <div class="btn-arrow"></div></div>
+                        <div class="dropdown">
+                            <div class="drop-link"><a href="../../customers/registration/" class="link-el"><div class="txt">Customer Registration</div></a></div>
+                        </div>
+                    </div>
+                    <div class="link">
+                        <div class="main-link link-el wallet"><div class="icon"></div> <div class="txt">Wallet</div> <div class="btn-arrow"></div></div>
+                        <div class="dropdown">
+                            <div class="drop-link"><a href="../../wallet/customer-wallet/" class="link-el"><div class="txt">Customer Wallet</div></a></div>
+                            <div class="drop-link"><a href="../../wallet/wallet-packages/" class="link-el"><div class="txt">Wallet Package</div></a></div>
+                        </div>
+                    </div>
+                    <div class="link">
+                        <div class="main-link link-el drivers"><div class="icon"></div> <div class="txt">Drivers</div> <div class="btn-arrow"></div></div>
+                        <div class="dropdown">
+                            <div class="drop-link"><a href="../../drivers/registration/" class="link-el"><div class="txt">Driver Registration</div></a></div>
+                        </div>
+                    </div>
+                    <div class="link">
+                        <div class="main-link link-el vehicles"><div class="icon"></div> <div class="txt">Watt Vehicles</div> <div class="btn-arrow"></div></div>
+                        <div class="dropdown">
+                            <div class="drop-link"><a href="../../watt-vehicles/vehicle-details/" class="link-el"><div class="txt">Vehicles Details</div></a></div>
+                            <div class="drop-link"><a href="../../watt-vehicles/types/" class="link-el"><div class="txt">Types</div></a></div>
+                            <div class="drop-link"><a href="../../watt-vehicles/available-vehicles/" class="link-el"><div class="txt">Available Vehicles</div></a></div>
+                        </div>
+                    </div>
+                    <div class="link">
+                        <div class="main-link link-el location"><div class="icon"></div> <div class="txt">Charging Location</div> <div class="btn-arrow"></div></div>
+                        <div class="dropdown">
+                            <div class="drop-link"><a href="../../charging-location/add-location/" class="link-el"><div class="txt">Add Location</div></a></div>
+                            <div class="drop-link"><a href="../../charging-location/view-locations/" class="link-el"><div class="txt">View Locations</div></a></div>
+                        </div>
+                    </div>
+                    <div class="link">
+                        <div class="main-link link-el station"><div class="icon"></div> <div class="txt">Charging Station</div> <div class="btn-arrow"></div></div>
+                        <div class="dropdown">
+                            <div class="drop-link"><a href="../../charging-stations/list/" class="link-el"><div class="txt">List</div></a></div>
+                        </div>
+                    </div>
+                    <div class="link">
+                        <div class="main-link link-el emergency"><div class="icon"></div> <div class="txt">Emergency</div> <div class="btn-arrow"></div></div>
+                        <div class="dropdown">
+                            <div class="drop-link"><a href="#" class="link-el"><div class="txt">Recovery</div></a></div>
+                            <div class="drop-link"><a href="#" class="link-el"><div class="txt">Recovery History</div></a></div>
+                            <div class="drop-link"><a href="#" class="link-el"><div class="txt">Boost</div></a></div>
+                            <div class="drop-link"><a href="#" class="link-el"><div class="txt">Boost History</div></a></div>
+                        </div>
+                    </div>
+                    <div class="link">
+                        <div class="main-link link-el schedules"><div class="icon"></div> <div class="txt">Schedules</div> <div class="btn-arrow"></div></div>
+                        <div class="dropdown">
+                            <div class="drop-link"><a href="#" class="link-el"><div class="txt">Charge Now</div></a></div>
+                            <div class="drop-link"><a href="#" class="link-el"><div class="txt">Subscriber's</div></a></div>
+                            <div class="drop-link"><a href="#" class="link-el"><div class="txt">History</div></a></div>
+                        </div>
+                    </div>
+                    <div class="link">
+                        <div class="main-link link-el settings"><div class="icon"></div> <div class="txt">Settings</div> <div class="btn-arrow"></div></div>
+                        <div class="dropdown">
+                            <div class="drop-link"><a href="../../settings/packages/" class="link-el"><div class="txt">Packages</div></a></div>
+                            <div class="drop-link"><a href="../../settings/subscription-plans/" class="link-el"><div class="txt">Subscription Plans</div></a></div>
+                            <div class="drop-link"><a href="../../settings/category/" class="link-el"><div class="txt">Category</div></a></div>
+                            <div class="drop-link"><a href="../../settings/offers/" class="link-el"><div class="txt">Offers</div></a></div>
+                            <div class="drop-link"><a href="../../settings/splash-images/" class="link-el"><div class="txt">Splash Images</div></a></div>
+                            <div class="drop-link"><a href="../../settings/vehicles-brands/" class="link-el"><div class="txt">Vehicles Brands</div></a></div>
+                            <div class="drop-link"><a href="../../settings/vehicles-models/" class="link-el"><div class="txt">Vehicles Models</div></a></div>
+                            <div class="drop-link"><a href="../../settings/app-settings/" class="link-el"><div class="txt">App Settings</div></a></div>
+                            <div class="drop-link"><a href="../../settings/extra-services/" class="link-el"><div class="txt">Extra Services</div></a></div>
+                            <div class="drop-link"><a href="../../settings/whatsapp/" class="link-el"><div class="txt">WhatsApp</div></a></div>
+                            <div class="drop-link"><a href="../../settings/feedback/" class="link-el"><div class="txt">Feedback Form</div></a></div>
+                        </div>
+                    </div>
+                    <div class="link">
+                        <div class="main-link link-el corporate"><div class="icon"></div> <div class="txt">Corporate</div> <div class="btn-arrow"></div></div>
+                        <div class="dropdown">
+                            <div class="drop-link"><a href="../../corporate/registration/" class="link-el"><div class="txt">Registration</div></a></div>
+                            <div class="drop-link"><a href="../../corporate/requests/" class="link-el"><div class="txt">Requests</div></a></div>
+                            <div class="drop-link"><a href="../../corporate/schedules/" class="link-el"><div class="txt">Schedules</div></a></div>
+                        </div>
+                    </div>
+                    <div class="link">
+                        <div class="main-link link-el reporting"><div class="icon"></div> <div class="txt">Reporting</div> <div class="btn-arrow"></div></div>
+                        <div class="dropdown">
+                            <div class="drop-link"><a href="#" class="link-el"><div class="txt">Invoices</div></a></div>
+                        </div>
+                    </div>
+                    <div class="link">
+                        <div class="main-link link-el logs"><div class="icon"></div> <div class="txt">Logs</div> <div class="btn-arrow"></div></div>
+                        <div class="dropdown">
+                            <div class="drop-link"><a href="#" class="link-el"><div class="txt">Driver Shift</div></a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="col-second">
+            <header>
+                <div class="cont">
+                    <div class="bx pg-dtls">
+                        <div class="ele-1">
+                            <button class="btn-menu flx" id="btnMenu"><img src="../../img/icon/menu.png" alt="Menu"></button>
+                        </div>
+                        <div class="ele-2">
+                            <h2 class="tit titnowrap">Orders</h2>
+                            <div class="path titnowrap">Orders / <span class="path-end">Details</span></div>
+                        </div>
+                    </div>
+                    <div class="bx search" id="bxSearchHeader">
+                        <div class="form-g-search">
+                            <label for="headrSearch">
+                                <button class="btn flx"><img src="../../img/icon/search.png" class="icon-22" alt="ICON"></button>
+                                <input type="text" class="inp-one" id="headrSearch" placeholder="Search for anything...">
+                            </label>
+                        </div>
+                    </div>
+                    <div class="bx last">
+                        <div class="btns">
+                            <div class="btn search"><button class="link flx" id="btnSearchHeader"><img src="../../img/icon/search.png" class="icon-24"></button></div>
+                            <div class="btn calendar"><a class="link flx"><img src="../../img/icon/calendar-2.png" class="icon-24"></a></div>
+                            <div class="btn questions"><a class="link flx"><img src="../../img/icon/message-question.png" class="icon-24"></a></div>
+                            <div class="btn notifications">
+                                <a class="link flx" href="../../notifications/">
+                                    <span class="noti-num"></span>
+                                    <img src="../../img/icon/notification.png" class="icon-24">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="account-dtls btn-user-options" ele-id="boxHeaderUserOptions">
+                            <div class="col acc-dtl">
+                                <span class="user-role titnowrap">Administrator</span>
+                                <span class="company titnowrap">Watt</span>
+                            </div>
+                            <div class="col">
+                                <div class="user-img">
+                                    <div class="img-box"><img src="../../img/Logo-white-back-black.png" class="icon-24" alt="Logo"></div>
+                                </div>
+                            </div>
+                            <div class="col btn">
+                                <button class="btn-account-opt flx"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="user-options" id="boxHeaderUserOptions">
+                    <button class="btn btn-profile btn-open-pop" pop-id="popUpResetAccountPassword" title="Profile"><span class="icon"></span> <span class="txt">Profile</span></button>
+                    <button class="btn btn-logout" title="Logout"><span class="icon"></span> <span class="txt">Log Out</span></button>
+                </div>
+            </header>
+            <main class="main orders-dtls">
+                <div class="container">
+                    <section class="main-content orders-dtls-sec">
+                        <div class="row-controll">
+                            <div class="ele">
+                                <button class="btn-back btn-back-wind"><img src="../../img/icon/arrow-left-long.png" class="icon-24"> <span class="txt">Back</span></button>
+                            </div>
+                            <div class="ele">
+                                <button class="btn-one st-smp btn-open-pop" pop-id="popUpReAssOrder" title="Re-Assign">Re-Assign <span class="txt-fll">Order</span></button>
+                                <button class="btn-one st-smp btn-open-pop" pop-id="popUpCancel" title="Cancel">Cancel <span class="txt-fll">All Orders</span></button>
+                                <button class="btn-two st-smp btn-open-pop" pop-id="popUpComplete" title="Complete">Complete <span class="txt-fll">All Orders</span></button>
+                            </div>
+                        </div>
+                        <div class="card two">
+                            <div class="row-or-dtls">
+                                <div class="dtl"><span class="tit">Order Number:</span> <span class="val">OR9345704</span></div>
+                                <div class="dtl"><span class="tit">Order Type:</span> <span class="val">Recovery</span></div>
+                                <div class="dtl"><span class="tit">Current Status:</span> <span class="val st-scheduled">Scheduled</span></div>
+                            </div>
+                            <div class="row">
+                                <div class="user-bx">
+                                    <div class="col-dtls u-img">
+                                        <div class="user-img">
+                                            <div class="img-box"><img src="../../img/avatar.png" class="icon-24" alt="Photo"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-dtls info">
+                                        <div class="user-dtl">
+                                            <div class="label">Name</div>
+                                            <div class="val titnowrap">Mark William</div>
+                                        </div>
+                                        <div class="user-dtl">
+                                            <div class="label">Email</div>
+                                            <div class="val titnowrap">mark.william@gmail.com</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-dtls info">
+                                        <div class="user-dtl">
+                                            <div class="label">Contact</div>
+                                            <div class="val titnowrap">+971 123 456 789</div>
+                                        </div>
+                                        <div class="user-dtl">
+                                            <div class="label">Address</div>
+                                            <div class="val titnowrap">Dubai, United Arab Emirates</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="bx-dtls">
+                                    <div class="hed">
+                                        <div class="title titnowrap">Customer Vehicle Detail</div>
+                                    </div>
+                                    <div class="col-dtls">
+                                        <div class="row-dtl">
+                                            <div class="tit titnowrap">Model</div>
+                                            <div class="value">Enter</div>
+                                        </div>
+                                        <div class="row-dtl">
+                                            <div class="tit titnowrap">Plate Number</div>
+                                            <div class="value">Enter</div>
+                                        </div>
+                                        <div class="col-dtl">
+                                            <div class="tit titnowrap">Location</div>
+                                            <div class="note location">
+                                                <!-- (Lat & Lng) Attributes of (Customer Vehicle) Location -->
+                                                <div class="txt" lat="25.19671538633986" lng="55.27472977678698" id="customerLocation">Building 297 Street 2 - Al Qusais - Industrial Area</div>
+                                                <button class="icon" id="btnCustomerLocation"><img src="../../img/icon/location-arrow.png" class="icon-28"></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bx-dtls bg watt-vehicle-dtls">
+                                    <div class="hed">
+                                        <div class="title titnowrap">Watt Vehicle Details</div>
+                                    </div>
+                                    <div class="bx-row">
+                                        <div class="row-half custom">
+                                            <div class="col-dtls">
+                                                <div class="row-dtl">
+                                                    <div class="tit titnowrap">Title</div>
+                                                    <div class="value">Watt Van</div>
+                                                </div>
+                                                <div class="row-dtl">
+                                                    <div class="tit titnowrap">Reg No</div>
+                                                    <div class="value">65466</div>
+                                                </div>
+                                                <div class="row-dtl">
+                                                    <div class="tit titnowrap">Driver Name</div>
+                                                    <div class="value">Henry</div>
+                                                </div>
+                                                <div class="row-dtl">
+                                                    <div class="tit titnowrap">Contact Number</div>
+                                                    <div class="value">+971 6464461</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row-half mapbx">
+                                            <div class="col-dtl">
+                                                <!-- (Lat & Lng) Attributes of (WATT Vehicle) Location -->
+                                                <div class="tit" lat="25.178954364944815" lng="55.275010410514994" id="wattVehicleLocation">Location</div>
+                                                <div id="map" class="map"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="bx-dtls bg">
+                                    <div class="info-group">
+                                        <div class="hd">
+                                            <div class="title titnowrap">Service Details</div>
+                                        </div>
+                                        <div class="info-dtls">
+                                            <div class="table-box">
+                                                <table class="table-st-one group">
+                                                    <tbody>
+                                                        <tr>
+                                                            <th>Type</th>
+                                                            <th>Date & Time</th>
+                                                            <th>Price</th>
+                                                            <th>Order Date</th>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Service01</td>
+                                                            <td>2018/10/10 10:57:46</td>
+                                                            <td>AED 250</td>
+                                                            <td class="cen">2018/10/10</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Service01</td>
+                                                            <td>2018/10/10 10:57:46</td>
+                                                            <td>AED 250</td>
+                                                            <td class="cen">2018/10/10</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Service01</td>
+                                                            <td>2018/10/10 10:57:46</td>
+                                                            <td>AED 250</td>
+                                                            <td class="cen">2018/10/10</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="info-group">
+                                        <div class="hd">
+                                            <div class="title titnowrap">Extra Service Details</div>
+                                        </div>
+                                        <div class="info-dtls">
+                                            <div class="table-box">
+                                                <table class="table-st-one group">
+                                                    <tbody>
+                                                        <tr>
+                                                            <th>Type</th>
+                                                            <th>Date & Time</th>
+                                                            <th>Price</th>
+                                                            <th>Order Date</th>
+                                                            <th>Action</th>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Service01</td>
+                                                            <td>2018/10/10 10:57:46</td>
+                                                            <td>AED 250</td>
+                                                            <td>2018/10/10</td>
+                                                            <td>
+                                                                <div class="btns">
+                                                                    <button class="btn btn-open-pop" pop-id="popUpDelete" title="Delete"><img src="../../img/icon/delete.png" class="icon-18" alt="Action"></button>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Service01</td>
+                                                            <td>2018/10/10 10:57:46</td>
+                                                            <td>AED 250</td>
+                                                            <td>2018/10/10</td>
+                                                            <td>
+                                                                <div class="btns">
+                                                                    <button class="btn btn-open-pop" pop-id="popUpDelete" title="Delete"><img src="../../img/icon/delete.png" class="icon-18" alt="Action"></button>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Service01</td>
+                                                            <td>2018/10/10 10:57:46</td>
+                                                            <td>AED 250</td>
+                                                            <td>2018/10/10</td>
+                                                            <td>
+                                                                <div class="btns">
+                                                                    <button class="btn btn-open-pop" pop-id="popUpDelete" title="Delete"><img src="../../img/icon/delete.png" class="icon-18" alt="Action"></button>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bx-dtls">
+                                    <div class="info-group remarks">
+                                        <div class="hd">
+                                            <div class="title">Remarks</div>
+                                        </div>
+                                        <div class="info-dtls ful-heg">
+                                            <textarea placeholder="Type..."></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </main>
+        </div>
+    </section>
+
+    <!-- PopUp Re-Addign Order -->
+    <div class="popup" id="popUpReAssOrder">
+        <div class="pop-box">
+            <div class="cont">
+                <div class="head one">
+                    <div class="title">Re-Assign Order</div>
+                    <button class="btn-close-pop" pop-id="popUpReAssOrder"><img src="../../img/icon/close.png" class="icon-24" alt="Close"></button>
+                </div>
+                <div class="info-cont">
+                    <div class="dtls">
+                        <div class="form-checkbox-g">
+                            <input type="radio" name="chargingType" class="radio" id="cardOne">
+                            <label class="charging-option" for="cardOne">
+                                <div class="box-img">
+                                    <div class="bx"><img src="../../img/charger.jpg" alt=""></div>
+                                </div>
+                                <div class="charger-dtls">
+                                    <div class="charger-name"><span class="cercle st-active"></span> <span class="val">EV Charger 5699</span></div>
+                                    <div class="col">
+                                        <div class="distance">11.0 km</div>
+                                        <div class="est-time">will be reached in <span class="val">13 min</span></div>
+                                    </div>
+                                    <div class="location titnowrap">Silicon Oasis</div>
+                                </div>
+                            </label>
+                        </div>
+                        <div class="form-checkbox-g">
+                            <input type="radio" name="chargingType" class="radio" id="cardTwo">
+                            <label class="charging-option" for="cardTwo">
+                                <div class="box-img">
+                                    <div class="bx"><img src="../../img/charger.jpg" alt=""></div>
+                                </div>
+                                <div class="charger-dtls">
+                                    <div class="charger-name"><span class="cercle st-inactive"></span> <span class="val">EV Charger 5699</span></div>
+                                    <div class="col">
+                                        <div class="distance">20.8 km</div>
+                                        <div class="est-time">will be reached in <span class="val">24 min</span></div>
+                                    </div>
+                                    <div class="location titnowrap">Dubai Mall</div>
+                                </div>
+                            </label>
+                        </div>
+                        <div class="form-checkbox-g">
+                            <input type="radio" name="chargingType" class="radio" id="cardThree">
+                            <label class="charging-option" for="cardThree">
+                                <div class="box-img">
+                                    <div class="bx"><img src="../../img/charger.jpg" alt=""></div>
+                                </div>
+                                <div class="charger-dtls">
+                                    <div class="charger-name"><span class="cercle st-active"></span> <span class="val">EV Charger 5699</span></div>
+                                    <div class="col">
+                                        <div class="distance">33.0 km</div>
+                                        <div class="est-time">will be reached in <span class="val">37 min</span></div>
+                                    </div>
+                                    <div class="location titnowrap">DIP Dubai</div>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="row-btn">
+                        <button class="btn-one st-smp">Save</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- PopUp Detele -->
+    <div class="popup" id="popUpDelete">
+        <div class="pop-box small">
+            <div class="cont">
+                <div class="head">
+                    <div class="title"></div>
+                    <button class="btn-close-pop" pop-id="popUpDelete"><img src="../../img/icon/close-two.png" class="icon-24" alt="Close"></button>
+                </div>
+                <div class="info-cont">
+                    <div class="dtls">
+                        <div class="tit">Are you sure you want to delete?</div>
+                        <div class="desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </div>
+                    </div>
+                    <div class="row-btn">
+                        <div class="ele">
+                            <button class="btn-two st-smp btn-close-pop" pop-id="popUpDelete">No</button>
+                        </div>
+                        <div class="ele">
+                            <button class="btn-one st-smp">YES</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- PopUp Cancel All Orders -->
+    <div class="popup" id="popUpCancel">
+        <div class="pop-box">
+            <div class="cont">
+                <div class="head one">
+                    <div class="title"></div>
+                    <button class="btn-close-pop" pop-id="popUpCancel"><img src="../../img/icon/close.png" class="icon-24" alt="Close"></button>
+                </div>
+                <div class="info-cont">
+                    <div class="dtls">
+                        <div class="tit">Are you sure you want to Cancel?</div>
+                        <div class="desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="lab-two" for="inpReasonCancellation">Reason for Cancellation</label>
+                        <textarea id="inpReasonCancellation" class="txtarea-one" placeholder="Enter..."></textarea>
+                    </div>
+                    <div class="row-btn">
+                        <div class="ele">
+                            <button class="btn-two st-smp btn-close-pop" pop-id="popUpCancel">No</button>
+                        </div>
+                        <div class="ele">
+                            <button class="btn-one st-smp">YES</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- PopUp Complete All Orders -->
+    <div class="popup" id="popUpComplete">
+        <div class="pop-box small">
+            <div class="cont">
+                <div class="head one">
+                    <div class="title"></div>
+                    <button class="btn-close-pop" pop-id="popUpComplete"><img src="../../img/icon/close.png" class="icon-24" alt="Close"></button>
+                </div>
+                <div class="info-cont">
+                    <div class="dtls">
+                        <div class="tit">Are you sure you want to Complete all orders?</div>
+                        <div class="desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </div>
+                    </div>
+                    <div class="row-btn">
+                        <div class="ele">
+                            <button class="btn-two st-smp btn-close-pop" pop-id="popUpComplete">No</button>
+                        </div>
+                        <div class="ele">
+                            <button class="btn-one st-smp">YES</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- PopUp Success -->
+    <div class="popup" id="popUpSuccess">
+        <div class="pop-box">
+            <div class="cont">
+                <div class="head one">
+                    <div class="title"></div>
+                    <button class="btn-close-pop" pop-id="popUpSuccess"><img src="../../img/icon/close.png" class="icon-24" alt="Close"></button>
+                </div>
+                <div class="info-cont success">
+                    <div class="success-icon">
+                        <div class="img"></div>
+                    </div>
+                    <div class="dtls">
+                        <div class="tit">Updated Successfully!</div>
+                        <div class="desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </div>
+                    </div>
+                    <div class="row-btn">
+                        <button class="btn-one st-smp">Ok</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- PopUp Reset Password -->
+    <div class="popup" id="popUpResetAccountPassword">
+        <div class="pop-box">
+            <div class="cont">
+                <div class="head one">
+                    <div class="title">Reset Password</div>
+                    <button class="btn-close-pop" pop-id="popUpResetAccountPassword"><img src="../../img/icon/close.png" class="icon-24" alt="Close"></button>
+                </div>
+                <form action="" class="from-one">
+                    <div class="info-cont">
+                        <div class="tit">Are you want to Reset password?</div>
+                    </div>
+                    <div class="form-group">
+                        <label class="lab-one" for="inpPassword">
+                            <span class="icon flx"><img src="../../img/icon/lock.png" class="icon-22" alt="ICON"></span>
+                            <input type="password" id="inpOldPassword" class="inp-one" placeholder="Old Password">
+                            <button class="btn-show-hid" for-inp-id="inpOldPassword">Show</button>
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <label class="lab-one" for="inpRestNewPassword">
+                            <span class="icon flx"><img src="../../img/icon/lock.png" class="icon-22" alt="ICON"></span>
+                            <input type="password" id="inpRestNewPassword" class="inp-one" placeholder="New Password">
+                            <button class="btn-show-hid" for-inp-id="inpRestNewPassword">Show</button>
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <label class="lab-one" for="inpReEnterNewPassword">
+                            <span class="icon flx"><img src="../../img/icon/lock.png" class="icon-22" alt="ICON"></span>
+                            <input type="password" id="inpReEnterNewPassword" class="inp-one" placeholder="Re-Enter Password">
+                            <button class="btn-show-hid" for-inp-id="inpReEnterNewPassword">Show</button>
+                        </label>
+                    </div>
+                    <div class="alert" style="display: none;">Error!</div>
+                    <div class="row-btn">
+                        <input type="submit" value="Reset" class="btn-one st-smp">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="../../js/general.js"></script>
+    <script src="master.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAVbvUlupbp_4xEafWMczx7JRyMRitbsX0&libraries=places,marker&callback=initMap" async defer></script>
+</body>
+</html>

@@ -1,0 +1,1183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/style.css" />
+    <link rel="stylesheet" href="../../css/normalize.css" />
+    <link rel="icon" href="../../img/favicon.ico" type="image/x-icon">
+    <title>App Settings</title>
+</head>
+<body>
+    <!-- Shadow -->
+    <div class="bx-shadow"></div>
+    <section class="all">
+        <nav class="navbar" id="navBox">
+            <div class="cont">
+                <div class="logo">
+                    <div class="img"><img src="../../img/logo-white-full.png" alt="Watt Mobilities"></div>
+                    <div class="close-btn"><button class="btn" id="btnCloseNav"><img src="../../img/icon/close.png" alt="Close"></button></div>
+                </div>
+                <div class="links">
+                    <div class="link">
+                        <!-- (act) class for Active Btn -->
+                        <div class="main-link"><a href="../../dashboard/" class="link-el dashboard"><div class="icon"></div><div class="txt">Dashboard</div></a></div>
+                    </div>
+                    <div class="link">
+                        <div class="main-link"><a href="../../orders/" class="link-el orders"><div class="icon"></div><div class="txt">Orders</div></a></div>
+                    </div>
+                    <div class="link">
+                        <div class="main-link link-el customers"><div class="icon"></div> <div class="txt">Customers</div> <div class="btn-arrow"></div></div>
+                        <div class="dropdown">
+                            <div class="drop-link"><a href="../../customers/registration/" class="link-el"><div class="txt">Customer Registration</div></a></div>
+                        </div>
+                    </div>
+                    <div class="link">
+                        <div class="main-link link-el wallet"><div class="icon"></div> <div class="txt">Wallet</div> <div class="btn-arrow"></div></div>
+                        <div class="dropdown">
+                            <div class="drop-link"><a href="../../wallet/customer-wallet/" class="link-el"><div class="txt">Customer Wallet</div></a></div>
+                            <div class="drop-link"><a href="../../wallet/wallet-packages/" class="link-el"><div class="txt">Wallet Package</div></a></div>
+                        </div>
+                    </div>
+                    <div class="link">
+                        <div class="main-link link-el drivers"><div class="icon"></div> <div class="txt">Drivers</div> <div class="btn-arrow"></div></div>
+                        <div class="dropdown">
+                            <div class="drop-link"><a href="../../drivers/registration/" class="link-el"><div class="txt">Driver Registration</div></a></div>
+                        </div>
+                    </div>
+                    <div class="link">
+                        <div class="main-link link-el vehicles"><div class="icon"></div> <div class="txt">Watt Vehicles</div> <div class="btn-arrow"></div></div>
+                        <div class="dropdown">
+                            <div class="drop-link"><a href="../../watt-vehicles/vehicle-details/" class="link-el"><div class="txt">Vehicles Details</div></a></div>
+                            <div class="drop-link"><a href="../../watt-vehicles/types/" class="link-el"><div class="txt">Types</div></a></div>
+                            <div class="drop-link"><a href="../../watt-vehicles/available-vehicles/" class="link-el"><div class="txt">Available Vehicles</div></a></div>
+                        </div>
+                    </div>
+                    <div class="link">
+                        <div class="main-link link-el location"><div class="icon"></div> <div class="txt">Charging Location</div> <div class="btn-arrow"></div></div>
+                        <div class="dropdown">
+                            <div class="drop-link"><a href="../../charging-location/add-location/" class="link-el"><div class="txt">Add Location</div></a></div>
+                            <div class="drop-link"><a href="../../charging-location/view-locations/" class="link-el"><div class="txt">View Locations</div></a></div>
+                        </div>
+                    </div>
+                    <div class="link">
+                        <div class="main-link link-el station"><div class="icon"></div> <div class="txt">Charging Station</div> <div class="btn-arrow"></div></div>
+                        <div class="dropdown">
+                            <div class="drop-link"><a href="../../charging-stations/list/" class="link-el"><div class="txt">List</div></a></div>
+                        </div>
+                    </div>
+                    <div class="link">
+                        <div class="main-link link-el emergency"><div class="icon"></div> <div class="txt">Emergency</div> <div class="btn-arrow"></div></div>
+                        <div class="dropdown">
+                            <div class="drop-link"><a href="#" class="link-el"><div class="txt">Recovery</div></a></div>
+                            <div class="drop-link"><a href="#" class="link-el"><div class="txt">Recovery History</div></a></div>
+                            <div class="drop-link"><a href="#" class="link-el"><div class="txt">Boost</div></a></div>
+                            <div class="drop-link"><a href="#" class="link-el"><div class="txt">Boost History</div></a></div>
+                        </div>
+                    </div>
+                    <div class="link">
+                        <div class="main-link link-el schedules"><div class="icon"></div> <div class="txt">Schedules</div> <div class="btn-arrow"></div></div>
+                        <div class="dropdown">
+                            <div class="drop-link"><a href="#" class="link-el"><div class="txt">Charge Now</div></a></div>
+                            <div class="drop-link"><a href="#" class="link-el"><div class="txt">Subscriber's</div></a></div>
+                            <div class="drop-link"><a href="#" class="link-el"><div class="txt">History</div></a></div>
+                        </div>
+                    </div>
+                    <div class="link show">
+                        <div class="main-link link-el settings"><div class="icon"></div> <div class="txt">Settings</div> <div class="btn-arrow"></div></div>
+                        <div class="dropdown">
+                            <div class="drop-link"><a href="../packages/" class="link-el"><div class="txt">Packages</div></a></div>
+                            <div class="drop-link"><a href="../subscription-plans/" class="link-el"><div class="txt">Subscription Plans</div></a></div>
+                            <div class="drop-link"><a href="../category/" class="link-el"><div class="txt">Category</div></a></div>
+                            <div class="drop-link"><a href="../offers/" class="link-el"><div class="txt">Offers</div></a></div>
+                            <div class="drop-link"><a href="../splash-images/" class="link-el"><div class="txt">Splash Images</div></a></div>
+                            <div class="drop-link"><a href="../vehicles-brands/" class="link-el"><div class="txt">Vehicles Brands</div></a></div>
+                            <div class="drop-link"><a href="../vehicles-models/" class="link-el"><div class="txt">Vehicles Models</div></a></div>
+                            <div class="drop-link"><a href="#" class="link-el act"><div class="txt">App Settings</div></a></div>
+                            <div class="drop-link"><a href="../extra-services/" class="link-el"><div class="txt">Extra Services</div></a></div>
+                            <div class="drop-link"><a href="../whatsapp/" class="link-el"><div class="txt">WhatsApp</div></a></div>
+                            <div class="drop-link"><a href="../feedback/" class="link-el"><div class="txt">Feedback Form</div></a></div>
+                        </div>
+                    </div>
+                    <div class="link">
+                        <div class="main-link link-el corporate"><div class="icon"></div> <div class="txt">Corporate</div> <div class="btn-arrow"></div></div>
+                        <div class="dropdown">
+                            <div class="drop-link"><a href="../../corporate/registration/" class="link-el"><div class="txt">Registration</div></a></div>
+                            <div class="drop-link"><a href="../../corporate/requests/" class="link-el"><div class="txt">Requests</div></a></div>
+                            <div class="drop-link"><a href="../../corporate/schedules/" class="link-el"><div class="txt">Schedules</div></a></div>
+                        </div>
+                    </div>
+                    <div class="link">
+                        <div class="main-link link-el reporting"><div class="icon"></div> <div class="txt">Reporting</div> <div class="btn-arrow"></div></div>
+                        <div class="dropdown">
+                            <div class="drop-link"><a href="../../reporting/invoice/" class="link-el"><div class="txt">Invoices</div></a></div>
+                        </div>
+                    </div>
+                    <div class="link">
+                        <div class="main-link link-el logs"><div class="icon"></div> <div class="txt">Logs</div> <div class="btn-arrow"></div></div>
+                        <div class="dropdown">
+                            <div class="drop-link"><a href="../../logs/driver-shift/" class="link-el"><div class="txt">Driver Shift</div></a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="col-second">
+            <header>
+                <div class="cont">
+                    <div class="bx pg-dtls">
+                        <div class="ele-1">
+                            <button class="btn-menu flx" id="btnMenu"><img src="../../img/icon/menu.png" alt="Menu"></button>
+                        </div>
+                        <div class="ele-2">
+                            <h2 class="tit titnowrap">Settings</h2>
+                            <div class="path titnowrap">Settings / <span class="path-end">App Settings</span></div>
+                        </div>
+                    </div>
+                    <div class="bx search" id="bxSearchHeader">
+                        <div class="form-g-search">
+                            <label for="headrSearch">
+                                <button class="btn flx"><img src="../../img/icon/search.png" class="icon-22" alt="ICON"></button>
+                                <input type="text" class="inp-one" id="headrSearch" placeholder="Search for anything...">
+                            </label>
+                        </div>
+                    </div>
+                    <div class="bx last">
+                        <div class="btns">
+                            <div class="btn search"><button class="link flx" id="btnSearchHeader"><img src="../../img/icon/search.png" class="icon-24"></button></div>
+                            <div class="btn calendar"><a class="link flx"><img src="../../img/icon/calendar-2.png" class="icon-24"></a></div>
+                            <div class="btn questions"><a class="link flx"><img src="../../img/icon/message-question.png" class="icon-24"></a></div>
+                            <div class="btn notifications">
+                                <a class="link flx" href="../../notifications/">
+                                    <span class="noti-num"></span>
+                                    <img src="../../img/icon/notification.png" class="icon-24">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="account-dtls btn-user-options" ele-id="boxHeaderUserOptions">
+                            <div class="col acc-dtl">
+                                <span class="user-role titnowrap">Administrator</span>
+                                <span class="company titnowrap">Watt</span>
+                            </div>
+                            <div class="col">
+                                <div class="user-img">
+                                    <div class="img-box"><img src="../../img/Logo-white-back-black.png" class="icon-24" alt="Logo"></div>
+                                </div>
+                            </div>
+                            <div class="col btn">
+                                <button class="btn-account-opt flx"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="user-options" id="boxHeaderUserOptions">
+                    <button class="btn btn-profile btn-open-pop" pop-id="popUpResetAccountPassword" title="Profile"><span class="icon"></span> <span class="txt">Profile</span></button>
+                    <button class="btn btn-logout" title="Logout"><span class="icon"></span> <span class="txt">Log Out</span></button>
+                </div>
+            </header>
+            <main class="main">
+                <div class="container">
+                    <section class="main-content section-st-one settings">
+                        <div class="card">
+                            <div class="hed">
+                                <div class="ele-one">
+                                    <div class="main-tit">Application Settings</div>
+                                </div>
+                            </div>
+                            <div class="content">
+                                <div class="sett-box">
+                                    <div class="head">
+                                        <div class="tit">Maximum Schedule Slots</div>
+                                    </div>
+                                    <div class="cont">
+                                        <div class="bx">
+                                            <div class="bx-ins">
+                                                <form action="" class="from-one">
+                                                    <div class="form-group">
+                                                        <label class="lab-two" for="inpMaxNumSlots">Maximum Number of Slots <span class="lab-desc">(Corporate and Customer both)</span></label>
+                                                        <input type="text" id="inpMaxNumSlots" class="inp-two number-inp" placeholder="Enter">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="lab-two" for="inpTotalHoursSlot">Total Hours Slot</label>
+                                                        <input type="text" id="inpTotalHoursSlot" class="inp-two number-inp" placeholder="Enter">
+                                                    </div>
+                                                    <div class="alert" style="display: block;">Error!</div>
+                                                    <div class="row-btn">
+                                                        <input type="submit" value="Save" class="btn-one st-smp">
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="sett-box">
+                                    <div class="head">
+                                        <div class="tit">Cancel Schedule Time Period</div>
+                                    </div>
+                                    <div class="cont">
+                                        <div class="bx">
+                                            <div class="bx-ins">
+                                                <form action="" class="from-one">
+                                                    <div class="lab-two main">Number of Hours Left for Cancel Schedule <span class="lab-desc">(Corporate and Customer both cannot cancel schedule before this time left)</span></div>
+                                                    <div class="form-group">
+                                                        <label class="lab-two" for="inpCancelScheduleCustomers">Customers</label>
+                                                        <input type="text" id="inpCancelScheduleCustomers" class="inp-two number-inp" placeholder="Enter">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="lab-two" for="inpCancelScheduleCorporate">Corporate</label>
+                                                        <input type="text" id="inpCancelScheduleCorporate" class="inp-two number-inp" placeholder="Enter">
+                                                    </div>
+                                                    <div class="alert" style="display: none;">Error!</div>
+                                                    <div class="row-btn">
+                                                        <input type="submit" value="Save" class="btn-one st-smp">
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="sett-box">
+                                    <div class="head">
+                                        <div class="tit">OTP SMS Template</div>
+                                    </div>
+                                    <div class="cont">
+                                        <div class="bx">
+                                            <div class="bx-ins">
+                                                <form action="" class="from-one">
+                                                    <div class="form-group">
+                                                        <label class="lab-two" for="inpOtpSmsStart">OTP Start Text <span class="lab-desc">(Before OTP Code)</span></label>
+                                                        <textarea id="inpOtpSmsStart" class="txtarea-one short" placeholder="Enter"></textarea>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="lab-two" for="inpOtpSmsEnd">OTP End Text <span class="lab-desc">(After OTP Code)</span></label>
+                                                        <textarea id="inpOtpSmsEnd" class="txtarea-one short" placeholder="Enter"></textarea>
+                                                    </div>
+                                                    <div class="alert" style="display: none;">Error!</div>
+                                                    <div class="row-btn all-same">
+                                                        <input type="submit" value="Save" class="btn-one st-smp">
+                                                        <button class="btn-two st-smp btn-open-pop" pop-id="popUpDetails">View</button>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="sett-box">
+                                    <div class="head">
+                                        <div class="tit">OTP Email Template</div>
+                                    </div>
+                                    <div class="cont">
+                                        <div class="bx">
+                                            <div class="bx-ins">
+                                                <form action="" class="from-one">
+                                                    <div class="form-group">
+                                                        <label class="lab-two" for="inpOtpEmailSubject">OTP Subject</span></label>
+                                                        <input type="text" id="inpOtpEmailSubject" class="inp-two" placeholder="Enter">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="lab-two" for="inpOtpEmailTitle">OTP Title</span></label>
+                                                        <input type="text" id="inpOtpEmailTitle" class="inp-two" placeholder="Enter">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="lab-two" for="inpOtpEmailText">OTP Text</label>
+                                                        <textarea id="inpOtpEmailText" class="txtarea-one short" placeholder="Enter"></textarea>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="lab-two" for="inpOtpEmailFooter">Footer</label>
+                                                        <textarea id="inpOtpEmailFooter" class="txtarea-one short" placeholder="Enter"></textarea>
+                                                    </div>
+                                                    <div class="alert" style="display: block;">Error!</div>
+                                                    <div class="row-btn all-same">
+                                                        <input type="submit" value="Save" class="btn-one st-smp">
+                                                        <button class="btn-two st-smp btn-open-pop" pop-id="popUpDetails">View</button>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="sett-box">
+                                    <div class="head">
+                                        <div class="tit">Schedule Slot Amount and Credits Per KiloMeter</div>
+                                    </div>
+                                    <div class="cont">
+                                        <div class="bx">
+                                            <div class="bx-ins">
+                                                <form action="" class="from-one">
+                                                    <div class="form-group-mult">
+                                                        <div class="tit">Kilometer Slab Between 1 to 10 KM</div>
+                                                        <div class="bx-two">
+                                                            <div class="form-group">
+                                                                <label class="lab-two" for="inpSlotAmountRangeOne">Amount</label>
+                                                                <input type="text" id="inpSlotAmountRangeOne" class="inp-two number-inp" placeholder="Enter Amount">
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label class="lab-two" for="inpSlotCreditsRangeOne">Credits</label>
+                                                                <input type="text" id="inpSlotCreditsRangeOne" class="inp-two number-inp" placeholder="Enter Credits">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group-mult">
+                                                        <div class="tit">Kilometer Slab Between 11 to 20 KM</div>
+                                                        <div class="bx-two">
+                                                            <div class="form-group">
+                                                                <label class="lab-two" for="inpSlotAmountRangeTwo">Amount</label>
+                                                                <input type="text" id="inpSlotAmountRangeTwo" class="inp-two number-inp" placeholder="Enter Amount">
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label class="lab-two" for="inpSlotCreditsRangeTwo">Credits</label>
+                                                                <input type="text" id="inpSlotCreditsRangeTwo" class="inp-two number-inp" placeholder="Enter Credits">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group-mult">
+                                                        <div class="tit">Kilometer Slab Between 21 to 50 KM</div>
+                                                        <div class="bx-two">
+                                                            <div class="form-group">
+                                                                <label class="lab-two" for="inpSlotAmountRangeThree">Amount</label>
+                                                                <input type="text" id="inpSlotAmountRangeThree" class="inp-two number-inp" placeholder="Enter Amount">
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label class="lab-two" for="inpSlotCreditsRangeThree">Credits</label>
+                                                                <input type="text" id="inpSlotCreditsRangeThree" class="inp-two number-inp" placeholder="Enter Credits">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group-mult">
+                                                        <div class="tit">Kilometer Slab Between 51 to 80 KM</div>
+                                                        <div class="bx-two">
+                                                            <div class="form-group">
+                                                                <label class="lab-two" for="inpSlotAmountRangeFour">Amount</label>
+                                                                <input type="text" id="inpSlotAmountRangeFour" class="inp-two number-inp" placeholder="Enter Amount">
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label class="lab-two" for="inpSlotCreditsRangeFour">Credits</label>
+                                                                <input type="text" id="inpSlotCreditsRangeFour" class="inp-two number-inp" placeholder="Enter Credits">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group-mult">
+                                                        <div class="tit">Kilometer Slab Between 81 to 120 KM</div>
+                                                        <div class="bx-two">
+                                                            <div class="form-group">
+                                                                <label class="lab-two" for="inpSlotAmountRangeFive">Amount</label>
+                                                                <input type="text" id="inpSlotAmountRangeFive" class="inp-two number-inp" placeholder="Enter Amount">
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label class="lab-two" for="inpSlotCreditsRangeFive">Credits</label>
+                                                                <input type="text" id="inpSlotCreditsRangeFive" class="inp-two number-inp" placeholder="Enter Credits">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="alert" style="display: block;">Error!</div>
+                                                    <div class="row-btn">
+                                                        <input type="submit" value="Save" class="btn-one st-smp">
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="sett-box">
+                                    <div class="head">
+                                        <div class="tit">Boost (Express) - Amount and Credits Per KiloMeter</div>
+                                    </div>
+                                    <div class="cont">
+                                        <div class="bx">
+                                            <div class="bx-ins">
+                                                <form action="" class="from-one">
+                                                    <div class="form-group-mult">
+                                                        <div class="tit">Kilometer Slab Between 1 to 10 KM</div>
+                                                        <div class="bx-two">
+                                                            <div class="form-group">
+                                                                <label class="lab-two" for="inpBoostExpressAmountRangeOne">Amount</label>
+                                                                <input type="text" id="inpBoostExpressAmountRangeOne" class="inp-two number-inp" placeholder="Enter Amount">
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label class="lab-two" for="inpBoostExpressCreditsRangeOne">Credits</label>
+                                                                <input type="text" id="inpBoostExpressCreditsRangeOne" class="inp-two number-inp" placeholder="Enter Credits">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group-mult">
+                                                        <div class="tit">Kilometer Slab Between 11 to 20 KM</div>
+                                                        <div class="bx-two">
+                                                            <div class="form-group">
+                                                                <label class="lab-two" for="inpBoostExpressAmountRangeTwo">Amount</label>
+                                                                <input type="text" id="inpBoostExpressAmountRangeTwo" class="inp-two number-inp" placeholder="Enter Amount">
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label class="lab-two" for="inpBoostExpressCreditsRangeTwo">Credits</label>
+                                                                <input type="text" id="inpBoostExpressCreditsRangeTwo" class="inp-two number-inp" placeholder="Enter Credits">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group-mult">
+                                                        <div class="tit">Kilometer Slab Between 21 to 50 KM</div>
+                                                        <div class="bx-two">
+                                                            <div class="form-group">
+                                                                <label class="lab-two" for="inpBoostExpressAmountRangeThree">Amount</label>
+                                                                <input type="text" id="inpBoostExpressAmountRangeThree" class="inp-two number-inp" placeholder="Enter Amount">
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label class="lab-two" for="inpBoostExpressCreditsRangeThree">Credits</label>
+                                                                <input type="text" id="inpBoostExpressCreditsRangeThree" class="inp-two number-inp" placeholder="Enter Credits">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group-mult">
+                                                        <div class="tit">Kilometer Slab Between 51 to 80 KM</div>
+                                                        <div class="bx-two">
+                                                            <div class="form-group">
+                                                                <label class="lab-two" for="inpBoostExpressAmountRangeFour">Amount</label>
+                                                                <input type="text" id="inpBoostExpressAmountRangeFour" class="inp-two number-inp" placeholder="Enter Amount">
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label class="lab-two" for="inpBoostExpressCreditsRangeFour">Credits</label>
+                                                                <input type="text" id="inpBoostExpressCreditsRangeFour" class="inp-two number-inp" placeholder="Enter Credits">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group-mult">
+                                                        <div class="tit">Kilometer Slab Between 81 to 120 KM</div>
+                                                        <div class="bx-two">
+                                                            <div class="form-group">
+                                                                <label class="lab-two" for="inpBoostExpressAmountRangeFive">Amount</label>
+                                                                <input type="text" id="inpBoostExpressAmountRangeFive" class="inp-two number-inp" placeholder="Enter Amount">
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label class="lab-two" for="inpBoostExpressCreditsRangeFive">Credits</label>
+                                                                <input type="text" id="inpBoostExpressCreditsRangeFive" class="inp-two number-inp" placeholder="Enter Credits">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="alert" style="display: block;">Error!</div>
+                                                    <div class="row-btn">
+                                                        <input type="submit" value="Save" class="btn-one st-smp">
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="sett-box">
+                                    <div class="head">
+                                        <div class="tit">Boost (Saver) - Amount and Credits Per KiloMeter</div>
+                                    </div>
+                                    <div class="cont">
+                                        <div class="bx">
+                                            <div class="bx-ins">
+                                                <form action="" class="from-one">
+                                                    <div class="form-group-mult">
+                                                        <div class="tit">Kilometer Slab Between 1 to 10 KM</div>
+                                                        <div class="bx-two">
+                                                            <div class="form-group">
+                                                                <label class="lab-two" for="inpBoostSaverAmountRangeOne">Amount</label>
+                                                                <input type="text" id="inpBoostSaverAmountRangeOne" class="inp-two number-inp" placeholder="Enter Amount">
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label class="lab-two" for="inpBoostSaverCreditsRangeOne">Credits</label>
+                                                                <input type="text" id="inpBoostSaverCreditsRangeOne" class="inp-two number-inp" placeholder="Enter Credits">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group-mult">
+                                                        <div class="tit">Kilometer Slab Between 11 to 20 KM</div>
+                                                        <div class="bx-two">
+                                                            <div class="form-group">
+                                                                <label class="lab-two" for="inpBoostSaverAmountRangeTwo">Amount</label>
+                                                                <input type="text" id="inpBoostSaverAmountRangeTwo" class="inp-two number-inp" placeholder="Enter Amount">
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label class="lab-two" for="inpBoostSaverCreditsRangeTwo">Credits</label>
+                                                                <input type="text" id="inpBoostSaverCreditsRangeTwo" class="inp-two number-inp" placeholder="Enter Credits">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group-mult">
+                                                        <div class="tit">Kilometer Slab Between 21 to 50 KM</div>
+                                                        <div class="bx-two">
+                                                            <div class="form-group">
+                                                                <label class="lab-two" for="inpBoostSaverAmountRangeThree">Amount</label>
+                                                                <input type="text" id="inpBoostSaverAmountRangeThree" class="inp-two number-inp" placeholder="Enter Amount">
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label class="lab-two" for="inpBoostSaverCreditsRangeThree">Credits</label>
+                                                                <input type="text" id="inpBoostSaverCreditsRangeThree" class="inp-two number-inp" placeholder="Enter Credits">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group-mult">
+                                                        <div class="tit">Kilometer Slab Between 51 to 80 KM</div>
+                                                        <div class="bx-two">
+                                                            <div class="form-group">
+                                                                <label class="lab-two" for="inpBoostSaverAmountRangeFour">Amount</label>
+                                                                <input type="text" id="inpBoostSaverAmountRangeFour" class="inp-two number-inp" placeholder="Enter Amount">
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label class="lab-two" for="inpBoostSaverCreditsRangeFour">Credits</label>
+                                                                <input type="text" id="inpBoostSaverCreditsRangeFour" class="inp-two number-inp" placeholder="Enter Credits">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group-mult">
+                                                        <div class="tit">Kilometer Slab Between 81 to 120 KM</div>
+                                                        <div class="bx-two">
+                                                            <div class="form-group">
+                                                                <label class="lab-two" for="inpBoostSaverAmountRangeFive">Amount</label>
+                                                                <input type="text" id="inpBoostSaverAmountRangeFive" class="inp-two number-inp" placeholder="Enter Amount">
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label class="lab-two" for="inpBoostSaverCreditsRangeFive">Credits</label>
+                                                                <input type="text" id="inpBoostSaverCreditsRangeFive" class="inp-two number-inp" placeholder="Enter Credits">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="alert" style="display: block;">Error!</div>
+                                                    <div class="row-btn">
+                                                        <input type="submit" value="Save" class="btn-one st-smp">
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="sett-box">
+                                    <div class="head">
+                                        <div class="tit">Recovery Request Amount Per KiloMeter and Service Charges</div>
+                                    </div>
+                                    <div class="cont">
+                                        <div class="bx">
+                                            <div class="bx-ins">
+                                                <form action="" class="from-one">
+                                                    <div class="form-group">
+                                                        <label class="lab-two" for="inpReoveryAmountPerKM">Amount</label>
+                                                        <input type="text" id="inpReoveryAmountPerKM" class="inp-two number-inp" placeholder="Enter">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="lab-two" for="inpReoveryServiceCharges">Service Charges</label>
+                                                        <input type="text" id="inpReoveryServiceCharges" class="inp-two number-inp" placeholder="Enter">
+                                                    </div>
+                                                    <div class="alert" style="display: block;">Error!</div>
+                                                    <div class="row-btn">
+                                                        <input type="submit" value="Save" class="btn-one st-smp">
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="sett-box">
+                                    <div class="head">
+                                        <div class="tit">Boost Reward</div>
+                                    </div>
+                                    <div class="cont">
+                                        <div class="bx">
+                                            <div class="bx-ins">
+                                                <form action="" class="from-one">
+                                                    <div class="form-group-mult">
+                                                        <div class="tit">If Amount is Greater than 100 AED</div>
+                                                        <div class="form-group">
+                                                            <label class="lab-two" for="inpBoostRewardCaseOne">Reward Credits</label>
+                                                            <input type="text" id="inpBoostRewardCaseOne" class="inp-two number-inp" placeholder="Enter Amount">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group-mult">
+                                                        <div class="tit">If Amount is Greater than 200 AED</div>
+                                                        <div class="form-group">
+                                                            <label class="lab-two" for="inpBoostRewardCaseTwo">Reward Credits</label>
+                                                            <input type="text" id="inpBoostRewardCaseTwo" class="inp-two number-inp" placeholder="Enter Amount">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group-mult">
+                                                        <div class="tit">If Amount is Greater than 300 AED</div>
+                                                        <div class="form-group">
+                                                            <label class="lab-two" for="inpBoostRewardCaseThree">Reward Credits</label>
+                                                            <input type="text" id="inpBoostRewardCaseThree" class="inp-two number-inp" placeholder="Enter Amount">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group-mult">
+                                                        <div class="tit">If Amount is Greater than 400 AED</div>
+                                                        <div class="form-group">
+                                                            <label class="lab-two" for="inpBoostRewardCaseFour">Reward Credits</label>
+                                                            <input type="text" id="inpBoostRewardCaseFour" class="inp-two number-inp" placeholder="Enter Amount">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group-mult">
+                                                        <div class="tit">If Amount is Greater than 500 AED</div>
+                                                        <div class="form-group">
+                                                            <label class="lab-two" for="inpBoostRewardCaseFive">Reward Credits</label>
+                                                            <input type="text" id="inpBoostRewardCaseFive" class="inp-two number-inp" placeholder="Enter Amount">
+                                                        </div>
+                                                    </div>
+                                                    <div class="alert" style="display: block;">Error!</div>
+                                                    <div class="row-btn">
+                                                        <input type="submit" value="Save" class="btn-one st-smp">
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="sett-box">
+                                    <div class="head">
+                                        <div class="tit">Schedule Slot Reward</div>
+                                    </div>
+                                    <div class="cont">
+                                        <div class="bx">
+                                            <div class="bx-ins">
+                                                <form action="" class="from-one">
+                                                    <div class="form-group-mult">
+                                                        <div class="tit">If Amount is Greater than 100 AED</div>
+                                                        <div class="form-group">
+                                                            <label class="lab-two" for="inpScheduleSlotRewardCaseOne">Reward Credits</label>
+                                                            <input type="text" id="inpScheduleSlotRewardCaseOne" class="inp-two number-inp" placeholder="Enter Amount">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group-mult">
+                                                        <div class="tit">If Amount is Greater than 200 AED</div>
+                                                        <div class="form-group">
+                                                            <label class="lab-two" for="inpScheduleSlotRewardCaseTwo">Reward Credits</label>
+                                                            <input type="text" id="inpScheduleSlotRewardCaseTwo" class="inp-two number-inp" placeholder="Enter Amount">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group-mult">
+                                                        <div class="tit">If Amount is Greater than 300 AED</div>
+                                                        <div class="form-group">
+                                                            <label class="lab-two" for="inpScheduleSlotRewardCaseThree">Reward Credits</label>
+                                                            <input type="text" id="inpScheduleSlotRewardCaseThree" class="inp-two number-inp" placeholder="Enter Amount">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group-mult">
+                                                        <div class="tit">If Amount is Greater than 400 AED</div>
+                                                        <div class="form-group">
+                                                            <label class="lab-two" for="inpScheduleSlotRewardCaseFour">Reward Credits</label>
+                                                            <input type="text" id="inpScheduleSlotRewardCaseFour" class="inp-two number-inp" placeholder="Enter Amount">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group-mult">
+                                                        <div class="tit">If Amount is Greater than 500 AED</div>
+                                                        <div class="form-group">
+                                                            <label class="lab-two" for="inpScheduleSlotRewardCaseFive">Reward Credits</label>
+                                                            <input type="text" id="inpScheduleSlotRewardCaseFive" class="inp-two number-inp" placeholder="Enter Amount">
+                                                        </div>
+                                                    </div>
+                                                    <div class="alert" style="display: block;">Error!</div>
+                                                    <div class="row-btn">
+                                                        <input type="submit" value="Save" class="btn-one st-smp">
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="sett-box">
+                                    <div class="head">
+                                        <div class="tit">Reciept Email Template</div>
+                                    </div>
+                                    <div class="cont">
+                                        <div class="bx">
+                                            <div class="bx-ins">
+                                                <form action="" class="from-one">
+                                                    <div class="form-group">
+                                                        <label class="lab-two" for="inpRecieptEmailTemp">Template as HTML</label>
+                                                        <textarea id="inpRecieptEmailTemp" class="txtarea-one code" placeholder="Enter"></textarea>
+                                                    </div>
+                                                    <div class="alert" style="display: block;">Error!</div>
+                                                    <div class="row-btn all-same">
+                                                        <input type="submit" value="Save" class="btn-one st-smp">
+                                                        <button class="btn-two st-smp btn-preview-pop" pop-id="popUpPreviewTemplate" code-data-frm="inpRecieptEmailTemp" box-preview-temp="boxPreviewTemplate">View</button>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="sett-box">
+                                    <div class="head">
+                                        <div class="tit">Customer Registration OTP Email Template</div>
+                                    </div>
+                                    <div class="cont">
+                                        <div class="bx">
+                                            <div class="bx-ins">
+                                                <form action="" class="from-one">
+                                                    <div class="form-group">
+                                                        <label class="lab-two" for="inpCustomerRegOtpEmailTemp">Template as HTML</label>
+                                                        <textarea id="inpCustomerRegOtpEmailTemp" class="txtarea-one code" placeholder="Enter"></textarea>
+                                                    </div>
+                                                    <div class="alert" style="display: block;">Error!</div>
+                                                    <div class="row-btn all-same">
+                                                        <input type="submit" value="Save" class="btn-one st-smp">
+                                                        <button class="btn-two st-smp btn-preview-pop" pop-id="popUpPreviewTemplate" code-data-frm="inpCustomerRegOtpEmailTemp" box-preview-temp="boxPreviewTemplate">View</button>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="sett-box">
+                                    <div class="head">
+                                        <div class="tit">Invoice Email Template (Boost)</div>
+                                    </div>
+                                    <div class="cont">
+                                        <div class="bx">
+                                            <div class="bx-ins">
+                                                <form action="" class="from-one">
+                                                    <div class="form-group">
+                                                        <label class="lab-two" for="inpInvoiceBoostEmailTemp">Template as HTML</label>
+                                                        <textarea id="inpInvoiceBoostEmailTemp" class="txtarea-one code" placeholder="Enter"></textarea>
+                                                    </div>
+                                                    <div class="alert" style="display: block;">Error!</div>
+                                                    <div class="row-btn all-same">
+                                                        <input type="submit" value="Save" class="btn-one st-smp">
+                                                        <button class="btn-two st-smp btn-preview-pop" pop-id="popUpPreviewTemplate" code-data-frm="inpInvoiceBoostEmailTemp" box-preview-temp="boxPreviewTemplate">View</button>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="sett-box">
+                                    <div class="head">
+                                        <div class="tit">Invoice Email Template (Schedule)</div>
+                                    </div>
+                                    <div class="cont">
+                                        <div class="bx">
+                                            <div class="bx-ins">
+                                                <form action="" class="from-one">
+                                                    <div class="form-group">
+                                                        <label class="lab-two" for="inpInvoiceScheduleEmailTemp">Template as HTML</label>
+                                                        <textarea id="inpInvoiceScheduleEmailTemp" class="txtarea-one code" placeholder="Enter"></textarea>
+                                                    </div>
+                                                    <div class="alert" style="display: block;">Error!</div>
+                                                    <div class="row-btn all-same">
+                                                        <input type="submit" value="Save" class="btn-one st-smp">
+                                                        <button class="btn-two st-smp btn-preview-pop" pop-id="popUpPreviewTemplate" code-data-frm="inpInvoiceScheduleEmailTemp" box-preview-temp="boxPreviewTemplate">View</button>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="sett-box">
+                                    <div class="head">
+                                        <div class="tit">Invoice Email Template (Recovery)</div>
+                                    </div>
+                                    <div class="cont">
+                                        <div class="bx">
+                                            <div class="bx-ins">
+                                                <form action="" class="from-one">
+                                                    <div class="form-group">
+                                                        <label class="lab-two" for="inpInvoiceRecoveryEmailTemp">Template as HTML</label>
+                                                        <textarea id="inpInvoiceRecoveryEmailTemp" class="txtarea-one code" placeholder="Enter"></textarea>
+                                                    </div>
+                                                    <div class="alert" style="display: block;">Error!</div>
+                                                    <div class="row-btn all-same">
+                                                        <input type="submit" value="Save" class="btn-one st-smp">
+                                                        <button class="btn-two st-smp btn-preview-pop" pop-id="popUpPreviewTemplate" code-data-frm="inpInvoiceRecoveryEmailTemp" box-preview-temp="boxPreviewTemplate">View</button>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="sett-box">
+                                    <div class="head">
+                                        <div class="tit">Customer Welcome Registration Email Template</div>
+                                    </div>
+                                    <div class="cont">
+                                        <div class="bx">
+                                            <div class="bx-ins">
+                                                <form action="" class="from-one">
+                                                    <div class="form-group">
+                                                        <label class="lab-two" for="inpCustomerWelcomeRegEmailTemp">Template as HTML</label>
+                                                        <textarea id="inpCustomerWelcomeRegEmailTemp" class="txtarea-one code" placeholder="Enter"></textarea>
+                                                    </div>
+                                                    <div class="alert" style="display: block;">Error!</div>
+                                                    <div class="row-btn all-same">
+                                                        <input type="submit" value="Save" class="btn-one st-smp">
+                                                        <button class="btn-two st-smp btn-preview-pop" pop-id="popUpPreviewTemplate" code-data-frm="inpCustomerWelcomeRegEmailTemp" box-preview-temp="boxPreviewTemplate">View</button>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="sett-box">
+                                    <div class="head">
+                                        <div class="tit">Corporate Registration Credentails Email Template</div>
+                                    </div>
+                                    <div class="cont">
+                                        <div class="bx">
+                                            <div class="bx-ins">
+                                                <form action="" class="from-one">
+                                                    <div class="form-group">
+                                                        <label class="lab-two" for="inpCorporateRegCredentailsEmailTemp">Template as HTML</label>
+                                                        <textarea id="inpCorporateRegCredentailsEmailTemp" class="txtarea-one code" placeholder="Enter"></textarea>
+                                                    </div>
+                                                    <div class="alert" style="display: block;">Error!</div>
+                                                    <div class="row-btn all-same">
+                                                        <input type="submit" value="Save" class="btn-one st-smp">
+                                                        <button class="btn-two st-smp btn-preview-pop" pop-id="popUpPreviewTemplate" code-data-frm="inpCorporateRegCredentailsEmailTemp" box-preview-temp="boxPreviewTemplate">View</button>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="sett-box">
+                                    <div class="head">
+                                        <div class="tit">Email Verification OTP Template</div>
+                                    </div>
+                                    <div class="cont">
+                                        <div class="bx">
+                                            <div class="bx-ins">
+                                                <form action="" class="from-one">
+                                                    <div class="form-group">
+                                                        <label class="lab-two" for="inpOtpVerificationEmailTemp">Template as HTML</label>
+                                                        <textarea id="inpOtpVerificationEmailTemp" class="txtarea-one code" placeholder="Enter"></textarea>
+                                                    </div>
+                                                    <div class="alert" style="display: block;">Error!</div>
+                                                    <div class="row-btn all-same">
+                                                        <input type="submit" value="Save" class="btn-one st-smp">
+                                                        <button class="btn-two st-smp btn-preview-pop" pop-id="popUpPreviewTemplate" code-data-frm="inpOtpVerificationEmailTemp" box-preview-temp="boxPreviewTemplate">View</button>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="sett-box">
+                                    <div class="head">
+                                        <div class="tit">Account Remove OTP Email Template</div>
+                                    </div>
+                                    <div class="cont">
+                                        <div class="bx">
+                                            <div class="bx-ins">
+                                                <form action="" class="from-one">
+                                                    <div class="form-group">
+                                                        <label class="lab-two" for="inpOtpRemoveAccountEmailTemp">Template as HTML</label>
+                                                        <textarea id="inpOtpRemoveAccountEmailTemp" class="txtarea-one code" placeholder="Enter"></textarea>
+                                                    </div>
+                                                    <div class="alert" style="display: block;">Error!</div>
+                                                    <div class="row-btn all-same">
+                                                        <input type="submit" value="Save" class="btn-one st-smp">
+                                                        <button class="btn-two st-smp btn-preview-pop" pop-id="popUpPreviewTemplate" code-data-frm="inpOtpRemoveAccountEmailTemp" box-preview-temp="boxPreviewTemplate">View</button>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="sett-box">
+                                    <div class="head">
+                                        <div class="tit">Upcoming Schedules Email Template</div>
+                                    </div>
+                                    <div class="cont">
+                                        <div class="bx">
+                                            <div class="bx-ins">
+                                                <form action="" class="from-one">
+                                                    <div class="form-group">
+                                                        <label class="lab-two" for="inpUpcomingSchedulesEmailTemp">Template as HTML</label>
+                                                        <textarea id="inpUpcomingSchedulesEmailTemp" class="txtarea-one code" placeholder="Enter"></textarea>
+                                                    </div>
+                                                    <div class="alert" style="display: block;">Error!</div>
+                                                    <div class="row-btn all-same">
+                                                        <input type="submit" value="Save" class="btn-one st-smp">
+                                                        <button class="btn-two st-smp btn-preview-pop" pop-id="popUpPreviewTemplate" code-data-frm="inpUpcomingSchedulesEmailTemp" box-preview-temp="boxPreviewTemplate">View</button>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="sett-box">
+                                    <div class="head">
+                                        <div class="tit">Start Charging OTP Email Template</div>
+                                    </div>
+                                    <div class="cont">
+                                        <div class="bx">
+                                            <div class="bx-ins">
+                                                <form action="" class="from-one">
+                                                    <div class="form-group">
+                                                        <label class="lab-two" for="inpStartChargingOTPEmailTemp">Template as HTML</label>
+                                                        <textarea id="inpStartChargingOTPEmailTemp" class="txtarea-one code" placeholder="Enter"></textarea>
+                                                    </div>
+                                                    <div class="alert" style="display: block;">Error!</div>
+                                                    <div class="row-btn all-same">
+                                                        <input type="submit" value="Save" class="btn-one st-smp">
+                                                        <button class="btn-two st-smp btn-preview-pop" pop-id="popUpPreviewTemplate" code-data-frm="inpStartChargingOTPEmailTemp" box-preview-temp="boxPreviewTemplate">View</button>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="sett-box">
+                                    <div class="head">
+                                        <div class="tit">Customer Request Issue Email Template</div>
+                                    </div>
+                                    <div class="cont">
+                                        <div class="bx">
+                                            <div class="bx-ins">
+                                                <form action="" class="from-one">
+                                                    <div class="form-group">
+                                                        <label class="lab-two" for="inpCustomerRequestIssueEmailTemp">Template as HTML</label>
+                                                        <textarea id="inpCustomerRequestIssueEmailTemp" class="txtarea-one code" placeholder="Enter"></textarea>
+                                                    </div>
+                                                    <div class="alert" style="display: block;">Error!</div>
+                                                    <div class="row-btn all-same">
+                                                        <input type="submit" value="Save" class="btn-one st-smp">
+                                                        <button class="btn-two st-smp btn-preview-pop" pop-id="popUpPreviewTemplate" code-data-frm="inpCustomerRequestIssueEmailTemp" box-preview-temp="boxPreviewTemplate">View</button>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="sett-box">
+                                    <div class="head">
+                                        <div class="tit">Watt Vehicle Assign Based On Battery Level</div>
+                                    </div>
+                                    <div class="cont">
+                                        <div class="bx">
+                                            <div class="bx-ins">
+                                                <form action="" class="from-one">
+                                                    <div class="form-group">
+                                                        <label class="lab-two" for="inpMaxBtryPercentBoost">Maximum Battery Percentage for Boost</label>
+                                                        <input type="text" id="inpMaxBtryPercentBoost" class="inp-two number-inp" placeholder="Enter">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="lab-two" for="inpMaxBtryPercentSchedule">Maximum Battery Percentage for Schedule</label>
+                                                        <input type="text" id="inpMaxBtryPercentSchedule" class="inp-two number-inp" placeholder="Enter">
+                                                    </div>
+                                                    <div class="alert" style="display: block;">Error!</div>
+                                                    <div class="row-btn">
+                                                        <input type="submit" value="Save" class="btn-one st-smp">
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="sett-box">
+                                    <div class="head">
+                                        <div class="tit">Watt Vehicles Near By Radius</div>
+                                    </div>
+                                    <div class="cont">
+                                        <div class="bx">
+                                            <div class="bx-ins">
+                                                <form action="" class="from-one">
+                                                    <div class="form-group">
+                                                        <label class="lab-two" for="inpMaxRadiusBoostInKM">Maximum Radius for Boost Requests (In KM)</label>
+                                                        <input type="text" id="inpMaxRadiusBoostInKM" class="inp-two number-inp" placeholder="Enter">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="lab-two" for="inpMaxRadiusScheduleInKM">Maximum Radius for Schedule Requests (In KM)</label>
+                                                        <input type="text" id="inpMaxRadiusScheduleInKM" class="inp-two number-inp" placeholder="Enter">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="lab-two" for="inpMaxRadiusRecoveryInKM">Maximum Radius for Recovery Requests (In KM)</label>
+                                                        <input type="text" id="inpMaxRadiusRecoveryInKM" class="inp-two number-inp" placeholder="Enter">
+                                                    </div>
+                                                    <div class="alert" style="display: block;">Error!</div>
+                                                    <div class="row-btn">
+                                                        <input type="submit" value="Save" class="btn-one st-smp">
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="sett-box">
+                                    <div class="head">
+                                        <div class="tit">One Time Charge Plan Amount</div>
+                                    </div>
+                                    <div class="cont">
+                                        <div class="bx">
+                                            <div class="bx-ins">
+                                                <form action="" class="from-one">
+                                                    <div class="form-group">
+                                                        <label class="lab-two" for="inpAmountMaxCharge100Kw">Amount for Maximum Charge 100 KW</label>
+                                                        <input type="text" id="inpAmountMaxCharge100Kw" class="inp-two number-inp" placeholder="Enter">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="lab-two" for="inpAmountMaxCharge200Kw">Amount for Maximum Charge 200 KW</label>
+                                                        <input type="text" id="inpAmountMaxCharge200Kw" class="inp-two number-inp" placeholder="Enter">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="lab-two" for="inpAmountMaxCharge500Kw">Amount for Maximum Charge 500 KW</label>
+                                                        <input type="text" id="inpAmountMaxCharge500Kw" class="inp-two number-inp" placeholder="Enter">
+                                                    </div>
+                                                    <div class="alert" style="display: block;">Error!</div>
+                                                    <div class="row-btn">
+                                                        <input type="submit" value="Save" class="btn-one st-smp">
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="sett-box">
+                                    <div class="head">
+                                        <div class="tit">Boost Services</div>
+                                    </div>
+                                    <div class="cont">
+                                        <div class="bx">
+                                            <div class="bx-ins">
+                                                <form action="" class="from-one">
+                                                    <div class="form-group">
+                                                        <label class="lab-two" for="inpAmountMaxBoost10Perc">Amount for Maximum Boost 10%</label>
+                                                        <input type="text" id="inpAmountMaxBoost10Perc" class="inp-two number-inp" placeholder="Enter">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="lab-two" for="inpAmountMaxBoost20Perc">Amount for Maximum Boost 20%</label>
+                                                        <input type="text" id="inpAmountMaxBoost20Perc" class="inp-two number-inp" placeholder="Enter">
+                                                    </div>
+                                                    <div class="alert" style="display: block;">Error!</div>
+                                                    <div class="row-btn">
+                                                        <input type="submit" value="Save" class="btn-one st-smp">
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </main>
+        </div>
+    </section>
+
+    <!-- PopUp Details -->
+    <div class="popup" id="popUpDetails">
+        <div class="pop-box">
+            <div class="cont">
+                <div class="head one">
+                    <div class="title">Details</div>
+                    <button class="btn-close-pop" pop-id="popUpDetails"><img src="../../img/icon/close.png" class="icon-24" alt="Close"></button>
+                </div>
+                <div class="info-cont">
+                    <div class="info-dtls">
+                        <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem similique debitis exercitationem fuga voluptates corporis consequuntur quis at distinctio, quae provident quidem error cumque doloribus porro ipsa ad officia assumenda.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- PopUp Preview Email Templates -->
+    <div class="popup" id="popUpPreviewTemplate">
+        <div class="pop-box big">
+            <div class="cont">
+                <div class="head one">
+                    <div class="title">Email Template</div>
+                    <button class="btn-close-pop" pop-id="popUpPreviewTemplate"><img src="../../img/icon/close.png" class="icon-24" alt="Close"></button>
+                </div>
+                <div class="info-cont temp">
+                    <div class="email-design" id="boxPreviewTemplate"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <!-- PopUp Success -->
+    <div class="popup" id="popUpSuccess">
+        <div class="pop-box">
+            <div class="cont">
+                <div class="head one">
+                    <div class="title"></div>
+                    <button class="btn-close-pop" pop-id="popUpSuccess"><img src="../../img/icon/close.png" class="icon-24" alt="Close"></button>
+                </div>
+                <div class="info-cont success">
+                    <div class="success-icon">
+                        <div class="img"></div>
+                    </div>
+                    <div class="dtls">
+                        <div class="tit">Updated Successfully!</div>
+                        <div class="desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </div>
+                    </div>
+                    <div class="row-btn">
+                        <button class="btn-one st-smp">Ok</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        
+    <!-- PopUp Reset Password -->
+    <div class="popup" id="popUpResetAccountPassword">
+        <div class="pop-box">
+            <div class="cont">
+                <div class="head one">
+                    <div class="title">Reset Password</div>
+                    <button class="btn-close-pop" pop-id="popUpResetAccountPassword"><img src="../../img/icon/close.png" class="icon-24" alt="Close"></button>
+                </div>
+                <form action="" class="from-one">
+                    <div class="info-cont">
+                        <div class="tit">Are you want to Reset password?</div>
+                    </div>
+                    <div class="form-group">
+                        <label class="lab-one" for="inpPassword">
+                            <span class="icon flx"><img src="../../img/icon/lock.png" class="icon-22" alt="ICON"></span>
+                            <input type="password" id="inpOldPassword" class="inp-one" placeholder="Old Password">
+                            <button class="btn-show-hid" for-inp-id="inpOldPassword">Show</button>
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <label class="lab-one" for="inpRestNewPassword">
+                            <span class="icon flx"><img src="../../img/icon/lock.png" class="icon-22" alt="ICON"></span>
+                            <input type="password" id="inpRestNewPassword" class="inp-one" placeholder="New Password">
+                            <button class="btn-show-hid" for-inp-id="inpRestNewPassword">Show</button>
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <label class="lab-one" for="inpReEnterNewPassword">
+                            <span class="icon flx"><img src="../../img/icon/lock.png" class="icon-22" alt="ICON"></span>
+                            <input type="password" id="inpReEnterNewPassword" class="inp-one" placeholder="Re-Enter Password">
+                            <button class="btn-show-hid" for-inp-id="inpReEnterNewPassword">Show</button>
+                        </label>
+                    </div>
+                    <div class="alert" style="display: none;">Error!</div>
+                    <div class="row-btn">
+                        <input type="submit" value="Reset" class="btn-one st-smp">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="../../js/general.js"></script>
+    <script src="master.js"></script>
+</body>
+</html>

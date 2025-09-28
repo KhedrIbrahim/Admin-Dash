@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/style.css" />
+    <link rel="stylesheet" href="../../css/normalize.css" />
+    <link rel="icon" href="../../img/favicon.ico" type="image/x-icon">
+    <title>Feedback</title>
+</head>
+<body>
+    <!-- Shadow -->
+    <div class="bx-shadow"></div>
+    <section class="all">
+        <nav class="navbar" id="navBox">
+            <div class="cont">
+                <div class="logo">
+                    <div class="img"><img src="../../img/logo-white-full.png" alt="Watt Mobilities"></div>
+                    <div class="close-btn"><button class="btn" id="btnCloseNav"><img src="../../img/icon/close.png" alt="Close"></button></div>
+                </div>
+                <div class="links">
+                    <div class="link">
+                        <div class="main-link"><a href="../../dashboard/" class="link-el dashboard"><div class="icon"></div><div class="txt">Dashboard</div></a></div>
+                    </div>
+                    <div class="link">
+                        <div class="main-link"><a href="../../orders/" class="link-el orders"><div class="icon"></div><div class="txt">Orders</div></a></div>
+                    </div>
+                    <div class="link">
+                        <div class="main-link link-el customers"><div class="icon"></div> <div class="txt">Customers</div> <div class="btn-arrow"></div></div>
+                        <div class="dropdown">
+                            <div class="drop-link"><a href="../../customers/registration/" class="link-el"><div class="txt">Customer Registration</div></a></div>
+                        </div>
+                    </div>
+                    <div class="link">
+                        <div class="main-link link-el wallet"><div class="icon"></div> <div class="txt">Wallet</div> <div class="btn-arrow"></div></div>
+                        <div class="dropdown">
+                            <div class="drop-link"><a href="../../wallet/customer-wallet/" class="link-el"><div class="txt">Customer Wallet</div></a></div>
+                            <div class="drop-link"><a href="../../wallet/wallet-packages/" class="link-el"><div class="txt">Wallet Package</div></a></div>
+                        </div>
+                    </div>
+                    <div class="link">
+                        <div class="main-link link-el drivers"><div class="icon"></div> <div class="txt">Drivers</div> <div class="btn-arrow"></div></div>
+                        <div class="dropdown">
+                            <div class="drop-link"><a href="../../drivers/registration/" class="link-el"><div class="txt">Driver Registration</div></a></div>
+                        </div>
+                    </div>
+                    <div class="link">
+                        <div class="main-link link-el vehicles"><div class="icon"></div> <div class="txt">Watt Vehicles</div> <div class="btn-arrow"></div></div>
+                        <div class="dropdown">
+                            <div class="drop-link"><a href="../../watt-vehicles/vehicle-details/" class="link-el"><div class="txt">Vehicles Details</div></a></div>
+                            <div class="drop-link"><a href="../../watt-vehicles/types/" class="link-el"><div class="txt">Types</div></a></div>
+                            <div class="drop-link"><a href="../../watt-vehicles/available-vehicles/" class="link-el"><div class="txt">Available Vehicles</div></a></div>
+                        </div>
+                    </div>
+                    <div class="link">
+                        <div class="main-link link-el location"><div class="icon"></div> <div class="txt">Charging Location</div> <div class="btn-arrow"></div></div>
+                        <div class="dropdown">
+                            <div class="drop-link"><a href="../../charging-location/add-location/" class="link-el"><div class="txt">Add Location</div></a></div>
+                            <div class="drop-link"><a href="../../charging-location/view-locations/" class="link-el"><div class="txt">View Locations</div></a></div>
+                        </div>
+                    </div>
+                    <div class="link">
+                        <div class="main-link link-el station"><div class="icon"></div> <div class="txt">Charging Station</div> <div class="btn-arrow"></div></div>
+                        <div class="dropdown">
+                            <div class="drop-link"><a href="../../charging-stations/list/" class="link-el"><div class="txt">List</div></a></div>
+                        </div>
+                    </div>
+                    <div class="link">
+                        <div class="main-link link-el emergency"><div class="icon"></div> <div class="txt">Emergency</div> <div class="btn-arrow"></div></div>
+                        <div class="dropdown">
+                            <div class="drop-link"><a href="#" class="link-el"><div class="txt">Recovery</div></a></div>
+                            <div class="drop-link"><a href="#" class="link-el"><div class="txt">Recovery History</div></a></div>
+                            <div class="drop-link"><a href="#" class="link-el"><div class="txt">Boost</div></a></div>
+                            <div class="drop-link"><a href="#" class="link-el"><div class="txt">Boost History</div></a></div>
+                        </div>
+                    </div>
+                    <div class="link">
+                        <div class="main-link link-el schedules"><div class="icon"></div> <div class="txt">Schedules</div> <div class="btn-arrow"></div></div>
+                        <div class="dropdown">
+                            <div class="drop-link"><a href="#" class="link-el"><div class="txt">Charge Now</div></a></div>
+                            <div class="drop-link"><a href="#" class="link-el"><div class="txt">Subscriber's</div></a></div>
+                            <div class="drop-link"><a href="#" class="link-el"><div class="txt">History</div></a></div>
+                        </div>
+                    </div>
+                    <div class="link show">
+                        <div class="main-link link-el settings"><div class="icon"></div> <div class="txt">Settings</div> <div class="btn-arrow"></div></div>
+                        <div class="dropdown">
+                            <div class="drop-link"><a href="../packages/" class="link-el"><div class="txt">Packages</div></a></div>
+                            <div class="drop-link"><a href="../subscription-plans/" class="link-el"><div class="txt">Subscription Plans</div></a></div>
+                            <div class="drop-link"><a href="../category/" class="link-el"><div class="txt">Category</div></a></div>
+                            <div class="drop-link"><a href="../offers/" class="link-el"><div class="txt">Offers</div></a></div>
+                            <div class="drop-link"><a href="../splash-images/" class="link-el"><div class="txt">Splash Images</div></a></div>
+                            <div class="drop-link"><a href="../vehicles-brands/" class="link-el"><div class="txt">Vehicles Brands</div></a></div>
+                            <div class="drop-link"><a href="../vehicles-models/" class="link-el"><div class="txt">Vehicles Models</div></a></div>
+                            <div class="drop-link"><a href="../app-settings/" class="link-el"><div class="txt">App Settings</div></a></div>
+                            <div class="drop-link"><a href="../extra-services/" class="link-el"><div class="txt">Extra Services</div></a></div>
+                            <div class="drop-link"><a href="../whatsapp/" class="link-el"><div class="txt">WhatsApp</div></a></div>
+                            <div class="drop-link"><a href="#" class="link-el act"><div class="txt">Feedback Form</div></a></div>
+                        </div>
+                    </div>
+                    <div class="link">
+                        <div class="main-link link-el corporate"><div class="icon"></div> <div class="txt">Corporate</div> <div class="btn-arrow"></div></div>
+                        <div class="dropdown">
+                            <div class="drop-link"><a href="../../corporate/registration/" class="link-el"><div class="txt">Registration</div></a></div>
+                            <div class="drop-link"><a href="../../corporate/requests/" class="link-el"><div class="txt">Requests</div></a></div>
+                            <div class="drop-link"><a href="../../corporate/schedules/" class="link-el"><div class="txt">Schedules</div></a></div>
+                        </div>
+                    </div>
+                    <div class="link">
+                        <div class="main-link link-el reporting"><div class="icon"></div> <div class="txt">Reporting</div> <div class="btn-arrow"></div></div>
+                        <div class="dropdown">
+                            <div class="drop-link"><a href="../../reporting/invoice/" class="link-el"><div class="txt">Invoices</div></a></div>
+                        </div>
+                    </div>
+                    <div class="link">
+                        <div class="main-link link-el logs"><div class="icon"></div> <div class="txt">Logs</div> <div class="btn-arrow"></div></div>
+                        <div class="dropdown">
+                            <div class="drop-link"><a href="../../logs/driver-shift/" class="link-el"><div class="txt">Driver Shift</div></a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="col-second">
+            <header>
+                <div class="cont">
+                    <div class="bx pg-dtls">
+                        <div class="ele-1">
+                            <button class="btn-menu flx" id="btnMenu"><img src="../../img/icon/menu.png" alt="Menu"></button>
+                        </div>
+                        <div class="ele-2">
+                            <h2 class="tit titnowrap">Settings</h2>
+                            <div class="path titnowrap">Settings / <span class="path-end">Feedback</span></div>
+                        </div>
+                    </div>
+                    <div class="bx search" id="bxSearchHeader">
+                        <div class="form-g-search">
+                            <label for="headrSearch">
+                                <button class="btn flx"><img src="../../img/icon/search.png" class="icon-22" alt="ICON"></button>
+                                <input type="text" class="inp-one" id="headrSearch" placeholder="Search for anything...">
+                            </label>
+                        </div>
+                    </div>
+                    <div class="bx last">
+                        <div class="btns">
+                            <div class="btn search"><button class="link flx" id="btnSearchHeader"><img src="../../img/icon/search.png" class="icon-24"></button></div>
+                            <div class="btn calendar"><a class="link flx"><img src="../../img/icon/calendar-2.png" class="icon-24"></a></div>
+                            <div class="btn questions"><a class="link flx"><img src="../../img/icon/message-question.png" class="icon-24"></a></div>
+                            <div class="btn notifications">
+                                <a class="link flx" href="../../notifications/">
+                                    <span class="noti-num"></span>
+                                    <img src="../../img/icon/notification.png" class="icon-24">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="account-dtls btn-user-options" ele-id="boxHeaderUserOptions">
+                            <div class="col acc-dtl">
+                                <span class="user-role titnowrap">Administrator</span>
+                                <span class="company titnowrap">Watt</span>
+                            </div>
+                            <div class="col">
+                                <div class="user-img">
+                                    <div class="img-box"><img src="../../img/Logo-white-back-black.png" class="icon-24" alt="Logo"></div>
+                                </div>
+                            </div>
+                            <div class="col btn">
+                                <button class="btn-account-opt flx"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="user-options" id="boxHeaderUserOptions">
+                    <button class="btn btn-profile btn-open-pop" pop-id="popUpResetAccountPassword" title="Profile"><span class="icon"></span> <span class="txt">Profile</span></button>
+                    <button class="btn btn-logout" title="Logout"><span class="icon"></span> <span class="txt">Log Out</span></button>
+                </div>
+            </header>
+            <main class="main">
+                <div class="container">
+                    <section class="main-content section-st-one">
+                        <div class="card">
+                            <div class="hed">
+                                <div class="ele-one">
+                                    <div class="main-tit">Driver Vehicle Inspection Form</div>
+                                </div>
+                                <div class="ele-two">
+                                    <div class="form-g-search">
+                                        <label for="searchFeedbackForm" class="label-se-two">
+                                            <button class="btn flx"><img src="../../img/icon/search.png" class="icon-18" alt="ICON"></button>
+                                            <input type="text" class="inp-one" id="searchFeedbackForm" placeholder="Search...">
+                                        </label>
+                                    </div>
+                                    <div class="btns">
+                                        <button class="btn-one st-smp btn-open-pop" pop-id="popUpVeiwFeedbackForm">View Feedback Form</button>
+                                        <button class="btn-one st-smp btn-open-pop" pop-id="popUpEditAddFeedbackAttr">Add Feedback Attribute</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="table-box">
+                                <table class="table-st-one">
+                                    <tbody>
+                                        <tr>
+                                            <th>Sequence</th>
+                                            <th>Attribute</th>
+                                            <th class="cen">Status</th>
+                                            <th class="cen">Action</th>
+                                        </tr>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>Tire condition and pressure</td>
+                                            <td class="cen"><span class="status st-active">Active</span></td>
+                                            <td>
+                                                <div class="btns">
+                                                    <button class="btn btn-open-pop" pop-id="popUpEditAddFeedbackAttr" title="Edit"><img src="../../img/icon/edit.png" class="icon-24" alt="Action"></button>
+                                                    <button class="btn btn-open-pop" pop-id="popUpDelete" title="Delete"><img src="../../img/icon/delete-two.png" class="icon-24" alt="Action"></button>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>Exhaust system</td>
+                                            <td class="cen"><span class="status st-active">Active</span></td>
+                                            <td>
+                                                <div class="btns">
+                                                    <button class="btn btn-open-pop" pop-id="popUpEditAddFeedbackAttr" title="Edit"><img src="../../img/icon/edit.png" class="icon-24" alt="Action"></button>
+                                                    <button class="btn btn-open-pop" pop-id="popUpDelete" title="Delete"><img src="../../img/icon/delete-two.png" class="icon-24" alt="Action"></button>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>4</td>
+                                            <td>Brakes</td>
+                                            <td class="cen"><span class="status st-active">Active</span></td>
+                                            <td>
+                                                <div class="btns">
+                                                    <button class="btn btn-open-pop" pop-id="popUpEditAddFeedbackAttr" title="Edit"><img src="../../img/icon/edit.png" class="icon-24" alt="Action"></button>
+                                                    <button class="btn btn-open-pop" pop-id="popUpDelete" title="Delete"><img src="../../img/icon/delete-two.png" class="icon-24" alt="Action"></button>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>5</td>
+                                            <td>Headlights</td>
+                                            <td class="cen"><span class="status st-active">Active</span></td>
+                                            <td>
+                                                <div class="btns">
+                                                    <button class="btn btn-open-pop" pop-id="popUpEditAddFeedbackAttr" title="Edit"><img src="../../img/icon/edit.png" class="icon-24" alt="Action"></button>
+                                                    <button class="btn btn-open-pop" pop-id="popUpDelete" title="Delete"><img src="../../img/icon/delete-two.png" class="icon-24" alt="Action"></button>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>7</td>
+                                            <td>Speedometer and gauges</td>
+                                            <td class="cen"><span class="status st-active">Active</span></td>
+                                            <td>
+                                                <div class="btns">
+                                                    <button class="btn btn-open-pop" pop-id="popUpEditAddFeedbackAttr" title="Edit"><img src="../../img/icon/edit.png" class="icon-24" alt="Action"></button>
+                                                    <button class="btn btn-open-pop" pop-id="popUpDelete" title="Delete"><img src="../../img/icon/delete-two.png" class="icon-24" alt="Action"></button>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>8</td>
+                                            <td>Left fender</td>
+                                            <td class="cen"><span class="status st-active">Active</span></td>
+                                            <td>
+                                                <div class="btns">
+                                                    <button class="btn btn-open-pop" pop-id="popUpEditAddFeedbackAttr" title="Edit"><img src="../../img/icon/edit.png" class="icon-24" alt="Action"></button>
+                                                    <button class="btn btn-open-pop" pop-id="popUpDelete" title="Delete"><img src="../../img/icon/delete-two.png" class="icon-24" alt="Action"></button>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>9</td>
+                                            <td>Right fender</td>
+                                            <td class="cen"><span class="status st-active">Active</span></td>
+                                            <td>
+                                                <div class="btns">
+                                                    <button class="btn btn-open-pop" pop-id="popUpEditAddFeedbackAttr" title="Edit"><img src="../../img/icon/edit.png" class="icon-24" alt="Action"></button>
+                                                    <button class="btn btn-open-pop" pop-id="popUpDelete" title="Delete"><img src="../../img/icon/delete-two.png" class="icon-24" alt="Action"></button>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>10</td>
+                                            <td>Back door</td>
+                                            <td class="cen"><span class="status st-active">Active</span></td>
+                                            <td>
+                                                <div class="btns">
+                                                    <button class="btn btn-open-pop" pop-id="popUpEditAddFeedbackAttr" title="Edit"><img src="../../img/icon/edit.png" class="icon-24" alt="Action"></button>
+                                                    <button class="btn btn-open-pop" pop-id="popUpDelete" title="Delete"><img src="../../img/icon/delete-two.png" class="icon-24" alt="Action"></button>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>11</td>
+                                            <td>Side door</td>
+                                            <td class="cen"><span class="status st-active">Active</span></td>
+                                            <td>
+                                                <div class="btns">
+                                                    <button class="btn btn-open-pop" pop-id="popUpEditAddFeedbackAttr" title="Edit"><img src="../../img/icon/edit.png" class="icon-24" alt="Action"></button>
+                                                    <button class="btn btn-open-pop" pop-id="popUpDelete" title="Delete"><img src="../../img/icon/delete-two.png" class="icon-24" alt="Action"></button>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>12</td>
+                                            <td>Front glass</td>
+                                            <td class="cen"><span class="status st-active">Active</span></td>
+                                            <td>
+                                                <div class="btns">
+                                                    <button class="btn btn-open-pop" pop-id="popUpEditAddFeedbackAttr" title="Edit"><img src="../../img/icon/edit.png" class="icon-24" alt="Action"></button>
+                                                    <button class="btn btn-open-pop" pop-id="popUpDelete" title="Delete"><img src="../../img/icon/delete-two.png" class="icon-24" alt="Action"></button>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </main>
+        </div>
+    </section>
+
+    
+    <!-- PopUp View Feedback -->
+    <div class="popup" id="popUpVeiwFeedbackForm">
+        <div class="pop-box">
+            <div class="cont">
+                <div class="head one">
+                    <div class="title">Feedback</div>
+                    <button class="btn-close-pop" pop-id="popUpVeiwFeedbackForm"><img src="../../img/icon/close.png" class="icon-24" alt="Close"></button>
+                </div>
+                <form action="" class="from-one">
+                    <div class="form-group-mult two">
+                        <div class="tit">Drivers Before Start Shift Check for the following parameters and Rate as per condition</div>
+                    </div>
+                    <div class="form-group rating" data-rating="0">
+                        <label class="lab-two">1. Tire condition and pressure</label>
+                        <div class="rating-bx">
+                            <span data-value="1" class="rate-star"></span>
+                            <span data-value="2" class="rate-star"></span>
+                            <span data-value="3" class="rate-star"></span>
+                            <span data-value="4" class="rate-star"></span>
+                            <span data-value="5" class="rate-star"></span>
+                        </div>
+                    </div>
+                    <div class="form-group rating" data-rating="0">
+                        <label class="lab-two">2. Exhaust system</label>
+                        <div class="rating-bx">
+                            <span data-value="1" class="rate-star"></span>
+                            <span data-value="2" class="rate-star"></span>
+                            <span data-value="3" class="rate-star"></span>
+                            <span data-value="4" class="rate-star"></span>
+                            <span data-value="5" class="rate-star"></span>
+                        </div>
+                    </div>
+                    <div class="form-group rating" data-rating="0">
+                        <label class="lab-two">4. Brakes</label>
+                        <div class="rating-bx">
+                            <span data-value="1" class="rate-star"></span>
+                            <span data-value="2" class="rate-star"></span>
+                            <span data-value="3" class="rate-star"></span>
+                            <span data-value="4" class="rate-star"></span>
+                            <span data-value="5" class="rate-star"></span>
+                        </div>
+                    </div>
+                    <div class="form-group rating" data-rating="0">
+                        <label class="lab-two">5. Headlights</label>
+                        <div class="rating-bx">
+                            <span data-value="1" class="rate-star"></span>
+                            <span data-value="2" class="rate-star"></span>
+                            <span data-value="3" class="rate-star"></span>
+                            <span data-value="4" class="rate-star"></span>
+                            <span data-value="5" class="rate-star"></span>
+                        </div>
+                    </div>
+                    <div class="form-group rating" data-rating="0">
+                        <label class="lab-two">7. Speedometer and gauges</label>
+                        <div class="rating-bx">
+                            <span data-value="1" class="rate-star"></span>
+                            <span data-value="2" class="rate-star"></span>
+                            <span data-value="3" class="rate-star"></span>
+                            <span data-value="4" class="rate-star"></span>
+                            <span data-value="5" class="rate-star"></span>
+                        </div>
+                    </div>
+                    <div class="form-group rating" data-rating="0">
+                        <label class="lab-two">8. Left fender</label>
+                        <div class="rating-bx">
+                            <span data-value="1" class="rate-star"></span>
+                            <span data-value="2" class="rate-star"></span>
+                            <span data-value="3" class="rate-star"></span>
+                            <span data-value="4" class="rate-star"></span>
+                            <span data-value="5" class="rate-star"></span>
+                        </div>
+                    </div>
+                    <div class="form-group rating" data-rating="0">
+                        <label class="lab-two">9. Right fender</label>
+                        <div class="rating-bx">
+                            <span data-value="1" class="rate-star"></span>
+                            <span data-value="2" class="rate-star"></span>
+                            <span data-value="3" class="rate-star"></span>
+                            <span data-value="4" class="rate-star"></span>
+                            <span data-value="5" class="rate-star"></span>
+                        </div>
+                    </div>
+                    <div class="form-group rating" data-rating="0">
+                        <label class="lab-two">10. Back door</label>
+                        <div class="rating-bx">
+                            <span data-value="1" class="rate-star"></span>
+                            <span data-value="2" class="rate-star"></span>
+                            <span data-value="3" class="rate-star"></span>
+                            <span data-value="4" class="rate-star"></span>
+                            <span data-value="5" class="rate-star"></span>
+                        </div>
+                    </div>
+                    <div class="form-group rating" data-rating="0">
+                        <label class="lab-two">12. Front glass</label>
+                        <div class="rating-bx">
+                            <span data-value="1" class="rate-star"></span>
+                            <span data-value="2" class="rate-star"></span>
+                            <span data-value="3" class="rate-star"></span>
+                            <span data-value="4" class="rate-star"></span>
+                            <span data-value="5" class="rate-star"></span>
+                        </div>
+                    </div>
+                    <div class="form-group rating" data-rating="0">
+                        <label class="lab-two">11. Side door</label>
+                        <div class="rating-bx">
+                            <span data-value="1" class="rate-star"></span>
+                            <span data-value="2" class="rate-star"></span>
+                            <span data-value="3" class="rate-star"></span>
+                            <span data-value="4" class="rate-star"></span>
+                            <span data-value="5" class="rate-star"></span>
+                        </div>
+                    </div>
+                    <div class="form-group rating" data-rating="0">
+                        <label class="lab-two">13. Passenger glass</label>
+                        <div class="rating-bx">
+                            <span data-value="1" class="rate-star"></span>
+                            <span data-value="2" class="rate-star"></span>
+                            <span data-value="3" class="rate-star"></span>
+                            <span data-value="4" class="rate-star"></span>
+                            <span data-value="5" class="rate-star"></span>
+                        </div>
+                    </div>
+                    <div class="form-group rating" data-rating="0">
+                        <label class="lab-two">14. Driver glass</label>
+                        <div class="rating-bx">
+                            <span data-value="1" class="rate-star"></span>
+                            <span data-value="2" class="rate-star"></span>
+                            <span data-value="3" class="rate-star"></span>
+                            <span data-value="4" class="rate-star"></span>
+                            <span data-value="5" class="rate-star"></span>
+                        </div>
+                    </div>
+                    <div class="form-group rating" data-rating="0">
+                        <label class="lab-two">15. Left mirror</label>
+                        <div class="rating-bx">
+                            <span data-value="1" class="rate-star"></span>
+                            <span data-value="2" class="rate-star"></span>
+                            <span data-value="3" class="rate-star"></span>
+                            <span data-value="4" class="rate-star"></span>
+                            <span data-value="5" class="rate-star"></span>
+                        </div>
+                    </div>
+                    <div class="form-group rating" data-rating="0">
+                        <label class="lab-two">16. Right mirror</label>
+                        <div class="rating-bx">
+                            <span data-value="1" class="rate-star"></span>
+                            <span data-value="2" class="rate-star"></span>
+                            <span data-value="3" class="rate-star"></span>
+                            <span data-value="4" class="rate-star"></span>
+                            <span data-value="5" class="rate-star"></span>
+                        </div>
+                    </div>
+                    <div class="form-group rating" data-rating="0">
+                        <label class="lab-two">17. Front bumper</label>
+                        <div class="rating-bx">
+                            <span data-value="1" class="rate-star"></span>
+                            <span data-value="2" class="rate-star"></span>
+                            <span data-value="3" class="rate-star"></span>
+                            <span data-value="4" class="rate-star"></span>
+                            <span data-value="5" class="rate-star"></span>
+                        </div>
+                    </div>
+                    <div class="form-group rating" data-rating="0">
+                        <label class="lab-two">18. Back bumper</label>
+                        <div class="rating-bx">
+                            <span data-value="1" class="rate-star"></span>
+                            <span data-value="2" class="rate-star"></span>
+                            <span data-value="3" class="rate-star"></span>
+                            <span data-value="4" class="rate-star"></span>
+                            <span data-value="5" class="rate-star"></span>
+                        </div>
+                    </div>
+                    <div class="form-group rating" data-rating="0">
+                        <label class="lab-two">19. Right side body</label>
+                        <div class="rating-bx">
+                            <span data-value="1" class="rate-star"></span>
+                            <span data-value="2" class="rate-star"></span>
+                            <span data-value="3" class="rate-star"></span>
+                            <span data-value="4" class="rate-star"></span>
+                            <span data-value="5" class="rate-star"></span>
+                        </div>
+                    </div>
+                    <div class="form-group rating" data-rating="0">
+                        <label class="lab-two">20. Left side body</label>
+                        <div class="rating-bx">
+                            <span data-value="1" class="rate-star"></span>
+                            <span data-value="2" class="rate-star"></span>
+                            <span data-value="3" class="rate-star"></span>
+                            <span data-value="4" class="rate-star"></span>
+                            <span data-value="5" class="rate-star"></span>
+                        </div>
+                    </div>
+                    <div class="form-group rating" data-rating="0">
+                        <label class="lab-two">21. Backside body</label>
+                        <div class="rating-bx">
+                            <span data-value="1" class="rate-star"></span>
+                            <span data-value="2" class="rate-star"></span>
+                            <span data-value="3" class="rate-star"></span>
+                            <span data-value="4" class="rate-star"></span>
+                            <span data-value="5" class="rate-star"></span>
+                        </div>
+                    </div>
+                    <div class="form-group rating" data-rating="0">
+                        <label class="lab-two">22. Inside Cleanness</label>
+                        <div class="rating-bx">
+                            <span data-value="1" class="rate-star"></span>
+                            <span data-value="2" class="rate-star"></span>
+                            <span data-value="3" class="rate-star"></span>
+                            <span data-value="4" class="rate-star"></span>
+                            <span data-value="5" class="rate-star"></span>
+                        </div>
+                    </div>
+                    <div class="form-group rating" data-rating="0">
+                        <label class="lab-two">23. Outside Cleanness</label>
+                        <div class="rating-bx">
+                            <span data-value="1" class="rate-star"></span>
+                            <span data-value="2" class="rate-star"></span>
+                            <span data-value="3" class="rate-star"></span>
+                            <span data-value="4" class="rate-star"></span>
+                            <span data-value="5" class="rate-star"></span>
+                        </div>
+                    </div>
+                    <div class="alert" style="display: block;">Error!</div>
+                    <div class="row-btn">
+                        <input type="submit" value="Save" class="btn-one st-smp">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <!-- PopUp Add/Edit -->
+    <div class="popup" id="popUpEditAddFeedbackAttr">
+        <div class="pop-box">
+            <div class="cont">
+                <div class="head one">
+                    <div class="title">Feedback</div>
+                    <button class="btn-close-pop" pop-id="popUpEditAddFeedbackAttr"><img src="../../img/icon/close.png" class="icon-24" alt="Close"></button>
+                </div>
+                <form action="" class="from-one">
+                    <div class="form-group">
+                        <label class="lab-two" for="inpSequenceOrder">Sequence Order</label>
+                        <input type="text" id="inpSequenceOrder" class="inp-two number-inp" placeholder="Enter">
+                    </div>
+                    <div class="form-group">
+                        <label class="lab-two" for="inpFeedbackAttributes">Feedback Attributes</label>
+                        <textarea id="inpPackDetails" class="txtarea-one short" placeholder="Enter Details"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label class="lab-two" for="selFeedbackAttrStatus">Status</label>
+                        <select class="select-two" id="selFeedbackAttrStatus" title="Select Status">
+                            <option value="Select">Choose</option>
+                            <option value="Option">Active</option>
+                            <option value="Option">InActive</option>
+                        </select>
+                    </div>
+                    <div class="alert" style="display: block;">Error!</div>
+                    <div class="row-btn">
+                        <input type="submit" value="Save" class="btn-one st-smp">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- PopUp Detele -->
+    <div class="popup" id="popUpDelete">
+        <div class="pop-box small">
+            <div class="cont">
+                <div class="head">
+                    <div class="title"></div>
+                    <button class="btn-close-pop" pop-id="popUpDelete"><img src="../../img/icon/close-two.png" class="icon-24" alt="Close"></button>
+                </div>
+                <div class="info-cont">
+                    <div class="dtls">
+                        <div class="tit">Are you sure you want to delete?</div>
+                        <div class="desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </div>
+                    </div>
+                    <div class="row-btn">
+                        <div class="ele">
+                            <button class="btn-two st-smp btn-close-pop" pop-id="popUpDelete">No</button>
+                        </div>
+                        <div class="ele">
+                            <button class="btn-one st-smp">YES</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        
+    <!-- PopUp Reset Password -->
+    <div class="popup" id="popUpResetAccountPassword">
+        <div class="pop-box">
+            <div class="cont">
+                <div class="head one">
+                    <div class="title">Reset Password</div>
+                    <button class="btn-close-pop" pop-id="popUpResetAccountPassword"><img src="../../img/icon/close.png" class="icon-24" alt="Close"></button>
+                </div>
+                <form action="" class="from-one">
+                    <div class="info-cont">
+                        <div class="tit">Are you want to Reset password?</div>
+                    </div>
+                    <div class="form-group">
+                        <label class="lab-one" for="inpPassword">
+                            <span class="icon flx"><img src="../../img/icon/lock.png" class="icon-22" alt="ICON"></span>
+                            <input type="password" id="inpOldPassword" class="inp-one" placeholder="Old Password">
+                            <button class="btn-show-hid" for-inp-id="inpOldPassword">Show</button>
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <label class="lab-one" for="inpRestNewPassword">
+                            <span class="icon flx"><img src="../../img/icon/lock.png" class="icon-22" alt="ICON"></span>
+                            <input type="password" id="inpRestNewPassword" class="inp-one" placeholder="New Password">
+                            <button class="btn-show-hid" for-inp-id="inpRestNewPassword">Show</button>
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <label class="lab-one" for="inpReEnterNewPassword">
+                            <span class="icon flx"><img src="../../img/icon/lock.png" class="icon-22" alt="ICON"></span>
+                            <input type="password" id="inpReEnterNewPassword" class="inp-one" placeholder="Re-Enter Password">
+                            <button class="btn-show-hid" for-inp-id="inpReEnterNewPassword">Show</button>
+                        </label>
+                    </div>
+                    <div class="alert" style="display: none;">Error!</div>
+                    <div class="row-btn">
+                        <input type="submit" value="Reset" class="btn-one st-smp">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="../../js/general.js"></script>
+</body>
+</html>
